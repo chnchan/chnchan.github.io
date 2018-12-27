@@ -58,21 +58,14 @@ h2 {
   "work";
 }
 
-@media screen and (min-width: 480px)
-{
-  body {
-    background-color: blue;
-  }
-}
-
-@media screen and (min-width: 768px)
+@media screen and (min-width: 992px)
 {
   body {
     background-color: white;
   }
 }
 
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 1080px)
 {
   body {
     background-color: yellow;
