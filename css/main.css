@@ -52,10 +52,23 @@ h2 {
 
 .grid {
   display: grid;
-  grid-template-rows: 1200px 1200px;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 400px 1200px;
   grid-template-areas:
-  "me"
-  "work";
+  ". me ."
+  ". work .";
+}
+
+#me {
+  grid-area: me;
+
+  background-color: rgb(51, 153, 255, 0.5);
+  margin-top: 10px;
+  text-align: center;
+}
+
+#work {
+  grid-area: work;
 }
 
 @media screen and (min-width: 768px)
@@ -65,6 +78,8 @@ h2 {
   }
 }
 
+
+/* Desktop View */
 @media screen and (min-width: 1080px)
 {
   body {
