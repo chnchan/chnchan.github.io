@@ -1,3 +1,4 @@
+/* mobile view  (iPad, desktop see @media)*/
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@ body {
   font-family: 'Oswald';
   font-weight: bold;
 
-  background-color: red;                 /* NOTE FOR SMALL PHONE CHANGE LATER */
+  background-color: #ffffff;                 /* NOTE FOR SMALL PHONE CHANGE LATER */
 }
 
 h1 {
@@ -19,13 +20,12 @@ h2 {
 
 /* navBar */
 .nav{
-  position: fixed;
-  width: 100%;
+
   background-color: #ffffff;
   box-shadow: 0px 15px 15px -20px #111;
   list-style: none;
   margin: 0;
-  padding: 0 0 15px 0;
+  padding: 0 0 5px 0;
   text-align: center;
 }
 
@@ -38,10 +38,10 @@ h2 {
   color: #000;
   display: inline-block;
   font-family: 'Oswald';
-  font-size: 25px;
+  font-size: 15px;
   /*font-family: "Open Sans Condensed";*/
 
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 5px 20px;
   text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ h2 {
   "me me me"
   ". work .";
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 600px 1200px;
+  grid-template-rows: 400px 1200px;
 }
 
 #me {
@@ -87,10 +87,21 @@ div .meCen {
   grid-area: work;
 }
 
+
+/* iPad view */
 @media screen and (min-width: 768px)
 {
-  body {
-    background-color: white;
+  .nav {
+    padding: 0 0 15px 0;
+  }
+
+  .nav a {
+    font-size: 25px;
+    padding-bottom: 0px;
+  }
+
+  .grid {
+    grid-template-rows: 526px 1200px;
   }
 }
 
@@ -98,9 +109,12 @@ div .meCen {
 /* Desktop View */
 @media screen and (min-width: 1080px)
 {
+  .nav {
+    position: fixed;
+    width: 100%;
+  }
+
   .grid {
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 600px 1200px;
     grid-template-areas:
     ". me ."
