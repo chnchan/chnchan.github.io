@@ -61,7 +61,7 @@ h2 {
   "me me me"
   ". work .";
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 400px 1200px;
+  grid-template-rows: 600px 1200px;
 }
 
 #me {
