@@ -70,7 +70,7 @@ h2 {
   background-image: url("../src/img/apartment-chair-contemporary-509922_2.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto 100%;
   display: grid;
   grid-template-areas:
   ". . ."
