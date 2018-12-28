@@ -20,9 +20,16 @@ h2 {  /* title under name */
   margin: 0;
 }
 
+h3 {  /* actual heading */
+  font-family: 'PT Sans Narrow';
+  font-size: 25px;
+}
+
 #me h1 {
   margin-bottom: 0;
 }
+
+
 /* navBar */
 .nav{
 
@@ -62,12 +69,14 @@ h2 {  /* title under name */
 .grid {
   display: grid;
   grid-template-areas:
-  "me me me"
-  ". work .";
-  grid-template-columns: 1fr 70% 1fr;
-  grid-template-rows: 600px 1200px;
+  "me"
+  "recent";
+  grid-template-columns: 1fr;
+  grid-template-rows: 600px 600px;
 }
 
+
+/* Me & Resume goes here*/
 #me {
   grid-area: me;
 
@@ -89,14 +98,22 @@ div .meCen {
   grid-area: meCen;
 }
 
-#work {
-  grid-area: work;
+
+/* 3 of my recent work goes here*/
+#recent {
+  grid-area: recent;
+
+  text-align: center;
 }
 
 
 /* iPad view */
 @media screen and (min-width: 768px)
 {
+  h3 {
+    font-size: 35px;
+  }
+
   .nav {
     padding: 0 0 15px 0;
   }
@@ -107,7 +124,11 @@ div .meCen {
   }
 
   .grid {
-    grid-template-rows: 526px 1200px;
+    display: grid;
+    grid-template-areas:
+    "me"
+    "recent";
+    grid-template-rows: 526px 600px;
   }
 
   #me {
@@ -121,21 +142,18 @@ div .meCen {
 @media screen and (min-width: 1080px)
 {
 
-  .nav {
-
-  }
-
-
   .grid {
-    grid-template-rows: 650px 1200px;
     grid-template-areas:
     ". me ."
-    ". work .";
+    ". recent .";
+    grid-template-columns: 1fr 70% 1fr;
+    grid-template-rows: 650px 600px;
+
   }
 
   #me {
     background-image: url("../src/img/apartment-chair-contemporary-509922.jpg");
-    background-size: 100% 150%;
+    background-size: auto 100%;
     grid-template-areas:
     ". . ."
     ". meCen ."
