@@ -22,7 +22,6 @@ h2 {
 .nav{
 
   background-color: #ffffff;
-  box-shadow: 0px 15px 15px -20px #111;
   list-style: none;
   margin: 0;
   padding: 0 0 5px 0;
@@ -68,7 +67,10 @@ h2 {
 #me {
   grid-area: me;
 
-  background-color: rgb(51, 153, 255);
+  background-image: url("../src/img/apartment-chair-contemporary-509922.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: grid;
   grid-template-areas:
   ". . ."
@@ -103,6 +105,10 @@ div .meCen {
   .grid {
     grid-template-rows: 526px 1200px;
   }
+
+  body {
+    background-color: yellow;
+  }
 }
 
 
@@ -112,10 +118,11 @@ div .meCen {
   .nav {
     position: fixed;
     width: 100%;
+    box-shadow: 0px 15px 15px -20px #111;
   }
 
   .grid {
-    grid-template-rows: 600px 1200px;
+    grid-template-rows: 700px 1200px;
     grid-template-areas:
     ". me ."
     ". work .";
