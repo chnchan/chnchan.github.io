@@ -77,10 +77,10 @@ h2 {  /* title under name */
   background-size: auto 100%;
   display: grid;
   grid-template-areas:
-  "."
-  "meCen"
-  ".";
-  grid-template-columns: 1fr;
+  "meCen meCen meCen"
+  ". . ."
+  ". . .";
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   text-align: center;
 }
