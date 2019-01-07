@@ -29,10 +29,18 @@ h3 {  /* actual heading */
   margin-bottom: 0;
 }
 
+img{
+  border: 2px solid #ddd;
+  border-radius: 1px;
+  padding: 5px;
+  justify-self: center;
+  height: auto;
+  width: 50%;
+}
+
 
 /* navBar */
 .nav{
-
   background-color: #ffffff;
   list-style: none;
   margin: 0;
@@ -104,6 +112,18 @@ div .meCen {
   grid-area: recent;
 
   text-align: center;
+}
+
+#recent1 {
+  grid-area: r1;
+}
+
+#recent2 {
+  grid-area: r2;
+}
+
+#recent3 {
+  grid-area: r3;
 }
 
 
