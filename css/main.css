@@ -77,10 +77,9 @@ img{
 .grid {
   display: grid;
   grid-template-areas:
-  "me"
-  "recent";
+  "me";
   grid-template-columns: 1fr;
-  grid-template-rows: 600px 600px;
+  grid-template-rows: 600px;
 }
 
 
@@ -109,6 +108,7 @@ div .meCen {
 
 /* 3 of my recent work goes here*/
 #recent {
+  display: none;
   grid-area: recent;
 
   text-align: center;
@@ -154,6 +154,10 @@ div .meCen {
   #me {
     background-image: url("../src/img/apartment-chair-contemporary-509922.jpg");
     background-size: auto 100%;
+  }
+
+  #recent {
+    display: inline;
   }
 }
 
