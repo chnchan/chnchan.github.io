@@ -109,7 +109,7 @@ button:hover {
 #me {
   grid-area: me;
 
-  background-image: url("../src/img/apartment-chair-contemporary-509922_2.jpg");
+  background-image: url("../src/img/apartment-chair-contemporary-509922_2.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -174,7 +174,7 @@ div .meCen {
   }
 
   #me {
-    background-image: url("../src/img/apartment-chair-contemporary-509922.jpg");
+    background-image: url("../src/img/apartment-chair-contemporary-509922.png");
     background-size: auto 100%;
   }
 
