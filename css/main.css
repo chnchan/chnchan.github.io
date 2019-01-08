@@ -72,11 +72,21 @@ img{
   border-bottom: 2px solid #d62d20;
 }
 
-/* footer */
-footer {
-  border-top: 3px solid rgb(255, 204, 0);
-  padding: 30px;
+button {
   background-color: rgb(26,26,26);
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Ubuntu Condensed';
+  font-size: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 50px;
+
+}
+
+button:hover {
+  box-shadow: 0 0 5px #000;
 }
 
 /* grid stuff */
