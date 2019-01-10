@@ -150,10 +150,14 @@ div .meCen {
     font-size: 25px;
     padding-bottom: 0px;
   }
+
+  footer {
+    position: relative;
+  }
 }
 
 /* ipad protrait */
-@media screen and (min-width: 768px) and (orientation:portrait)
+@media screen and (min-width: 768px)
 {
   .grid {
     display: grid;
@@ -184,7 +188,7 @@ div .meCen {
     ". me ."
     ". . .";
     grid-template-columns: 1fr 70% 1fr;
-    grid-template-rows: 700px 100px;
+    grid-template-rows: 800px 100px;
 
   }
 
