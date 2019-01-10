@@ -92,7 +92,7 @@ button:hover {
 
 /* footer */
 footer {
-
+  position: fixed;
 
   background: rgb(26,26,26);
   bottom: 0;
