@@ -3,10 +3,33 @@ body {
   margin: 0;
   padding: 0;
   font-size: 20px;
-  font-family: 'Oswald';
-  font-weight: bold;
+  font-family: 'PT Sans Narrow';
 
   background-color: #ffffff;                 /* NOTE FOR SMALL PHONE CHANGE LATER */
+}
+
+h1 {  /* name */
+  font-family: 'Ubuntu Condensed';
+  font-size: 60px;
+}
+
+h2 {  /* title under name */
+  font-family: 'Open Sans Condensed';
+  font-size: 20px;
+  margin: 0;
+}
+
+h3 {  /* actual heading */
+  font-family: 'PT Sans Narrow';
+  font-size: 25px;
+}
+
+#me h1 {
+  margin-bottom: 0;
+}
+
+img {
+  padding: 10px 10px 0 10px;
 }
 
 .clearFormat {
@@ -39,7 +62,8 @@ body {
 }
 
 .nav a:hover {
-  border-bottom: 2px solid #000;
+  font-weight: bold;
+  text-shadow: 2px 0px rgb(26,26,26);
   transition: 0.3s;
 }
 
@@ -47,38 +71,37 @@ body {
   border-bottom: 2px solid #d62d20;
 }
 
-button {
-  background-color: rgb(26,26,26);
-  border: 2px solid black;
-  border-radius: 10px;
-  font-family: 'Ubuntu Condensed';
-  font-size: 15px;
-  padding: 5px 10px;
-  cursor: pointer;
-  margin-top: 50px;
-}
 
-button a {
-  color: white;
-}
+/* footer */
+footer {
+  position: fixed;
 
-button:hover {
-  box-shadow: 0 0 5px #000;
+  background: rgb(26,26,26);
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+  width: 100%;
 }
 
 /* grid stuff */
 .grid {
   display: grid;
   grid-template-areas:
+  "."
   ".";
   grid-template-columns: 1fr;
-  grid-template-rows: 600px;
+  grid-template-rows: 600px 50px;
 }
 
 
-/* iPad view */
+
+/* iPad view and up (trigger bigger font) */
 @media screen and (min-width: 768px)
 {
+  h3 {
+    font-size: 35px;
+  }
+
   .nav {
     padding: 0 0 15px 0;
   }
@@ -87,27 +110,13 @@ button:hover {
     font-size: 25px;
     padding-bottom: 0px;
   }
-
-  .grid {
-    display: grid;
-    grid-template-areas:
-    "."
-    ".";
-    grid-template-rows: 526px 600px;
-  }
 }
 
 
 /* Desktop View */
 @media screen and (min-width: 1080px)
 {
-
-  .grid {
-    grid-template-areas:
-    ". . ."
-    ". . .";
-    grid-template-columns: 1fr 70% 1fr;
-    grid-template-rows: 650px 600px;
-
+  footer {
+    position: relative;
   }
 }
