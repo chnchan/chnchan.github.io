@@ -92,7 +92,7 @@ button:hover {
 
 /* footer */
 footer {
-  position: fixed;
+
 
   background: rgb(26,26,26);
   bottom: 0;
@@ -105,10 +105,9 @@ footer {
 .grid {
   display: grid;
   grid-template-areas:
-  "me"
-  ".";
+  "me";
   grid-template-columns: 1fr;
-  grid-template-rows: 600px 200px;
+  grid-template-rows: 600px;
 }
 
 
@@ -188,4 +187,7 @@ div .meCen {
     grid-template-rows: 1fr 1fr 3fr;
   }
 
+  footer {
+    position: fixed;
+  }
 }
