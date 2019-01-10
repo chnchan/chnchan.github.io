@@ -32,6 +32,7 @@ h3 {  /* actual heading */
 img {
   padding: 10px 10px 0 10px;
 }
+
 .clearFormat {
   margin: 0;
   padding: 0;
@@ -105,9 +106,10 @@ footer {
 .grid {
   display: grid;
   grid-template-areas:
-  "me";
+  "me"
+  ".";
   grid-template-columns: 1fr;
-  grid-template-rows: 600px;
+  grid-template-rows: 600px 50px;
 }
 
 
@@ -133,8 +135,8 @@ div .meCen {
 }
 
 
-/* iPad view */
-@media screen and (min-width: 768px) and (orientation:portrait)
+/* iPad view and up (trigger bigger font) */
+@media screen and (min-width: 768px)
 {
   h3 {
     font-size: 35px;
@@ -148,7 +150,11 @@ div .meCen {
     font-size: 25px;
     padding-bottom: 0px;
   }
+}
 
+/* ipad protrait */
+@media screen and (min-width: 768px) and (orientation:portrait)
+{
   .grid {
     display: grid;
     grid-template-areas:
