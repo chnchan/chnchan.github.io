@@ -3,40 +3,30 @@ body {
   margin: 0;
   padding: 0;
   font-size: 20px;
-  font-family: 'PT Sans Narrow';
+  font-family: 'VT323';
 
   background-color: #ffffff;                 /* NOTE FOR SMALL PHONE CHANGE LATER */
 }
 
-h1 {  /* name */
-  font-family: 'Ubuntu Condensed';
-  font-size: 60px;
+p {
+  font-family: 'VT323';
+  font-size: 35px;
+  font-weight: normal;
+  color: rgb(0,220,0);
 }
 
-h2 {  /* title under name */
-  font-family: 'Open Sans Condensed';
-  font-size: 20px;
-  margin: 0;
-}
-
-h3 {  /* actual heading */
-  font-family: 'PT Sans Narrow';
-  font-size: 25px;
-}
-
-#me h1 {
-  margin-bottom: 0;
-}
-
-img {
+img { /* padding between icon for footer */
   padding: 10px 10px 0 10px;
 }
 
-.clearFormat {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+.leftPadding {
+  padding-left: 100px;
 }
+
+.noBreakLine {
+  display: inline;
+}
+
 /* navBar */
 .nav{
   background-color: #ffffff;
@@ -51,7 +41,6 @@ img {
 }
 
 .nav a {
-  border-bottom: 2px solid #ffffff;
   color: #000;
   display: inline-block;
   font-family: 'PT Sans Narrow';
@@ -59,6 +48,7 @@ img {
 
   padding: 20px 20px 5px 20px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .nav a:hover {
@@ -67,10 +57,24 @@ img {
   transition: 0.3s;
 }
 
-.nav a.active {
-  border-bottom: 2px solid #d62d20;
+a.active {
+  font-weight: bold;
+  text-shadow: 1px 0px rgb(26,26,26);
 }
 
+.terminal a {
+  color: rgb(0,220,0);
+  font-family: 'VT323';
+  font-size: 35px;
+  font-weight: normal;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.terminal a:hover {
+  color: white;
+  transition: 0.1s;
+}
 
 /* footer */
 footer {
@@ -87,21 +91,24 @@ footer {
 .grid {
   display: grid;
   grid-template-areas:
-  "."
-  ".";
-  grid-template-columns: 1fr;
-  grid-template-rows: 600px 50px;
+  ". terminal ."
+  ". . .";
+  grid-template-columns: 1fr 70% 1fr;
+  grid-template-rows: 900px 50px;
 }
 
+.terminal {
+  grid-area: terminal;
 
+  background-color: rgb(20,20,20);
+  border: 5px solid #ccc;
+  border-radius: 50px;
+  padding: 0 20px 0 20px;
+}
 
 /* iPad view and up (trigger bigger font) */
 @media screen and (min-width: 768px)
 {
-  h3 {
-    font-size: 35px;
-  }
-
   .nav {
     padding: 0 0 15px 0;
   }
@@ -110,12 +117,30 @@ footer {
     font-size: 25px;
     padding-bottom: 0px;
   }
+
+  .grid {
+    display: grid;
+    grid-template-areas:
+    ". terminal ."
+    ". . .";
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: 900px 50px;
+  }
 }
 
 
 /* Desktop View */
 @media screen and (min-width: 1080px)
 {
+  .grid {
+    display: grid;
+    grid-template-areas:
+    ". terminal ."
+    ". . .";
+    grid-template-columns: 1fr 70% 1fr;
+    grid-template-rows: 900px 50px;
+  }
+
   footer {
     position: relative;
   }
