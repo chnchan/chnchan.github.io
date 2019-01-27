@@ -104,7 +104,7 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-height: 545px) and (orientation: landscape) {
   footer {
     text-align: right;
   }
