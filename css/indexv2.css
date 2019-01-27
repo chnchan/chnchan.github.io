@@ -24,14 +24,14 @@ a {
 
 h1 {
   font-family: 'Ubuntu Condensed';
-  font-size: 45px;
+  font-size: 50px;
   margin: 0;
 }
 
 h2 {
   font-family: 'Open Sans Condensed';
   font-size: 15px;
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
 }
 
 p {
@@ -49,7 +49,7 @@ p {
 
 .nav {
   display: inline;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .quote {
@@ -126,6 +126,10 @@ Starting point of text-warping occur, change to phone view
     top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .nav {
+    margin-right: 20px;
   }
 
   .quote {
