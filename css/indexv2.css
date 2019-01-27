@@ -62,7 +62,6 @@ p {
 /* footer */
 footer {
   bottom: 0;
-  height: 45px;
   position: absolute;
   text-align: center;
   width:100%;
@@ -70,7 +69,6 @@ footer {
 
 img {
   height: 30px;
-  padding: 0 5px 15px 5px;
   width: 30px;
 }
 
@@ -104,7 +102,7 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
   }
 }
 
-@media screen and (max-height: 545px) and (orientation: landscape) {
+@media screen and (max-width: 545px) and (orientation: landscape) {
   footer {
     text-align: right;
   }
@@ -166,16 +164,10 @@ Starting point of text-warping occur, change to phone view
   }
 
   /* Footer */
-  footer {
-    height: 55px;
-    text-align: center;
-  }
-
   img {
     height: 40px;
-    padding: 10px 5px 0 5px;
     width: 40px;
-    transition: 0.2s
+    transition: 0.2s;
   }
 
   img:hover {
@@ -183,5 +175,11 @@ Starting point of text-warping occur, change to phone view
     padding-top: 0;
     width: 50px;
     transition: 0.2s;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  footer {
+    text-align: center;
   }
 }
