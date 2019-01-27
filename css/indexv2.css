@@ -5,32 +5,25 @@ SRC: https://css-tricks.com/perfect-full-page-background-image/
 html {
   background-color: rgb(197,197,197);
   background: url(../src/img/ruler-1246653_1920_3.jpg) no-repeat center center fixed;
-  background-size: 2000px 1300px;
+  background-size: 1500px 1000px;
 }
 
 body {
   margin: 0;
 }
 
-/* Font */
+/* Fonts */
 a {
   color: grey;
   text-decoration: none;
   transition: 0.2s;
 }
 
-a:hover {
-  color: black;
-  font-weight: bold;
-  text-shadow: 1px 0px rgb(26,26,26);
-  transition: 0.2s;
-}
 
 h1 {
   font-family: 'Ubuntu Condensed';
   font-size: 500%;
   margin: 0;
-
 }
 
 h2 {
@@ -44,12 +37,12 @@ p {
   font-size: 23px;
 }
 
-/* Class */
+/* Classes */
 .center {
   position: absolute;
-  top: 47%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 
 .nav {
@@ -76,12 +69,48 @@ img {
   height: 40px;
   padding: 10px 5px 0 5px;
   width: 40px;
-  transition: 0.2s
 }
 
-img:hover {
-  height: 50px;
-  padding-top: 0;
-  width: 50px;
-  transition: 0.2s
+
+/*
+Media query
+https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
+*/
+/* Smartphones */
+@media screen and (min-width: 479px) {
+  html {
+    background-size: 2000px 1300px;
+  }
+
+  /* Font */
+  a {
+    transition: 0.2s;
+  }
+
+  a:hover {
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 0px rgb(26,26,26);
+    transition: 0.2s;
+  }
+
+  /* Classes */
+  .center {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Footer */
+  img {
+    transition: 0.2s;
+  }
+
+  img:hover {
+    height: 50px;
+    padding-top: 0;
+    width: 50px;
+    transition: 0.2s
+  }
 }
