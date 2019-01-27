@@ -1,0 +1,77 @@
+/*
+Background CSS
+SRC: https://css-tricks.com/perfect-full-page-background-image/
+*/
+html {
+  background-color: rgb(197,197,197);
+  background: url(../src/img/ruler-1246653_1920_3.jpg) no-repeat center center fixed;
+  background-size: 2000px 1300px;
+}
+
+body {
+  margin: 0;
+}
+
+/* Font */
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+h1 {
+  font-family: 'Ubuntu Condensed';
+  font-size: 500%;
+  margin: 0;
+
+}
+
+h2 {
+  font-family: 'Open Sans Condensed';
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+
+p {
+  font-family: 'PT Sans Narrow';
+  font-size: 23px;
+}
+
+/* Class */
+.center {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav {
+  display: inline;
+  margin-right: 20px;
+}
+
+.quote {
+  border-left: solid 2px rgb(26,26,26);
+  margin-left: 30px;
+  padding-left: 10px;
+}
+
+/* footer */
+footer {
+  bottom: 0;
+  height: 60px;
+  position: absolute;
+  text-align: center;
+  width:100%;
+}
+
+img {
+  padding: 10px 5px 0 5px;
+}
+
+img:hover {
+  box-shadow: 2px 2px green;
+}
