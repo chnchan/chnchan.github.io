@@ -7,14 +7,15 @@ html {
   background: url(../src/img/ruler-1246653_1920_3.jpg) no-repeat center center fixed;
   background-size: 1500px 1000px;
   transition: 0.1s;
+  height: 100%;
+
 }
 
 body {
   margin: 0;
-}
-
-section {
-  height: 600px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
 
 /* Fonts */
@@ -63,14 +64,14 @@ p {
 footer {
   bottom: 0;
   height: 45px;
-  position: absolute;
+  position: fixed;
   text-align: center;
   width:100%;
 }
 
 img {
   height: 30px;
-  padding: 10px 5px 0 5px;
+  padding: 0 5px 15px 5px;
   width: 30px;
 }
 
@@ -104,7 +105,7 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
 
   .center {
     position: absolute;
-    top: 35%;
+    top: 44%;
   }
 }
 
@@ -119,7 +120,7 @@ Starting point of text-warping occur, change to phone view
   }
 
   section {
-    height: 600px;
+    height: 100%;
   }
 
   /* Font */
