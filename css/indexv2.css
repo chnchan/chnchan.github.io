@@ -16,10 +16,14 @@ body {
 a {
   color: grey;
   text-decoration: none;
+  transition: 0.2s;
 }
 
 a:hover {
   color: black;
+  font-weight: bold;
+  text-shadow: 1px 0px rgb(26,26,26);
+  transition: 0.2s;
 }
 
 h1 {
@@ -62,16 +66,22 @@ p {
 /* footer */
 footer {
   bottom: 0;
-  height: 60px;
+  height: 55px;
   position: absolute;
   text-align: center;
   width:100%;
 }
 
 img {
+  height: 40px;
   padding: 10px 5px 0 5px;
+  width: 40px;
+  transition: 0.2s
 }
 
 img:hover {
-  box-shadow: 2px 2px green;
+  height: 50px;
+  padding-top: 0;
+  width: 50px;
+  transition: 0.2s
 }

@@ -180,12 +180,6 @@ div .meCen {
     transition: 0.2s;
   }
 
-  h1:hover {
-    font-size: 130px;
-    transition: 0.15s;
-    transition-timing-function: ease-in;
-  }
-
   .grid {
     grid-template-areas:
     ". me ."
