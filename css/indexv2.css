@@ -16,31 +16,29 @@ body {
 a {
   color: grey;
   text-decoration: none;
-  transition: 0.2s;
 }
-
 
 h1 {
   font-family: 'Ubuntu Condensed';
-  font-size: 500%;
+  font-size: 50px;
   margin: 0;
 }
 
 h2 {
   font-family: 'Open Sans Condensed';
-  font-size: 20px;
+  font-size: 15px;
   margin: 0 0 20px 0;
 }
 
 p {
   font-family: 'PT Sans Narrow';
-  font-size: 23px;
+  font-size: 18px;
 }
 
 /* Classes */
 .center {
   position: absolute;
-  top: 10%;
+  top: 39%;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -76,8 +74,10 @@ img {
 Media query
 https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
 */
-/* Smartphones */
-@media screen and (min-width: 479px) {
+/*
+Starting point of text-warping occur, change to phone view
+ */
+@media screen and (min-width: 546px) {
   html {
     background-size: 2000px 1300px;
   }
@@ -94,12 +94,24 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
     transition: 0.2s;
   }
 
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 23px;
+  }
+
   /* Classes */
   .center {
     position: absolute;
-    top: 47%;
+    top: 34%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
   }
 
   /* Footer */
