@@ -6,6 +6,7 @@ html {
   background-color: rgb(197,197,197);
   background: url(../src/img/ruler-1246653_1920_3.jpg) no-repeat center center fixed;
   background-size: 1500px 1000px;
+  transition: 0.1s;
 }
 
 body {
@@ -24,7 +25,7 @@ a {
 
 h1 {
   font-family: 'Ubuntu Condensed';
-  font-size: 50px;
+  font-size: 55px;
   margin: 0;
 }
 
@@ -61,7 +62,7 @@ p {
 /* footer */
 footer {
   bottom: 0;
-  height: 55px;
+  height: 45px;
   position: fixed;
   text-align: center;
   width:100%;
@@ -80,16 +81,20 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
 */
 /*
 Starting point of text-warping occur, change to phone view
- */
- @media only screen and (max-width : 320px) {
-   a {
-     color: green;
-   }
+*/
+@media only screen and (max-width: 546px) and (orientation : landscape) {
+  a {
+    color: green;
+  }
+  section {
+    height: 2000px;
+  }
  }
 
 @media screen and (min-width: 546px){
   html {
     background-size: 2000px 1300px;
+    transition: 0.1s;
   }
 
   section {
@@ -138,6 +143,10 @@ Starting point of text-warping occur, change to phone view
   }
 
   /* Footer */
+  footer {
+    height: 55px;
+  }
+
   img {
     height: 40px;
     padding: 10px 5px 0 5px;
