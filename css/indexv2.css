@@ -25,7 +25,7 @@ a {
 
 h1 {
   font-family: 'Ubuntu Condensed';
-  font-size: 55px;
+  font-size: 50px;
   margin: 0;
 }
 
@@ -63,7 +63,7 @@ p {
 footer {
   bottom: 0;
   height: 45px;
-  position: fixed;
+  position: absolute;
   text-align: center;
   width:100%;
 }
@@ -79,18 +79,23 @@ img {
 Media query
 https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
 */
-/*
-Starting point of text-warping occur, change to phone view
-*/
-@media only screen and (max-width: 546px) and (orientation : landscape) {
+
+/* for older/ small phone */
+@media screen and (max-width: 374px) {
   a {
     color: green;
   }
-  section {
-    height: 2000px;
-  }
- }
 
+  .center {
+    position: absolute;
+    top: 30%;
+  }
+}
+
+
+/*
+Starting point of text-warping occur, change to phone view
+*/
 @media screen and (min-width: 546px){
   html {
     background-size: 2000px 1300px;
@@ -98,7 +103,7 @@ Starting point of text-warping occur, change to phone view
   }
 
   section {
-    height: auto;
+    height: 600px;
   }
 
   /* Font */
