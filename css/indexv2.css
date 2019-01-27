@@ -83,10 +83,6 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
 
 /* for older/ small phone */
 @media screen and (max-width: 374px) {
-  a {
-    color: green;
-  }
-
   h1 {
     font-size: 40px;
   }
@@ -106,6 +102,12 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
   .center {
     position: absolute;
     top: 44%;
+  }
+}
+
+@media screen and (max-width: 545px) and (orientation: landscape) {
+  footer {
+    text-align: right;
   }
 }
 
