@@ -86,9 +86,25 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
     color: green;
   }
 
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .quote {
+    font-size: 16px;
+  }
+
   .center {
     position: absolute;
-    top: 30%;
+    top: 35%;
   }
 }
 
