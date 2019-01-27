@@ -15,7 +15,6 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  position: fixed;
 }
 
 /* Fonts */
@@ -64,7 +63,7 @@ p {
 footer {
   bottom: 0;
   height: 45px;
-  position: fixed;
+  position: absolute;
   text-align: center;
   width:100%;
 }
@@ -105,7 +104,7 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
   }
 }
 
-@media screen and (max-width: 545px) and (orientation: landscape) {
+@media screen and (orientation: landscape) {
   footer {
     text-align: right;
   }
@@ -169,6 +168,7 @@ Starting point of text-warping occur, change to phone view
   /* Footer */
   footer {
     height: 55px;
+    text-align: center;
   }
 
   img {
