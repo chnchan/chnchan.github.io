@@ -63,7 +63,7 @@ p {
 footer {
   bottom: 0;
   position: absolute;
-  text-align: right;
+  text-align: center;
   width:100%;
 }
 
@@ -74,12 +74,16 @@ img {
 }
 
 
-/*
-Media query
-https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
-*/
+/* *******************
+Media Query
+******************* */
 
-
+/* Not phone protrait */
+@media screen and (min-width: 415px){
+  footer {
+    text-align: right;
+  }
+}
 
 /* for older/ small phone */
 @media screen and (max-width: 374px) {
@@ -105,9 +109,7 @@ https://mediag.com/blog/popular-screen-resolutions-designing-for-all/
   }
 }
 
-/*
-Starting point of text-warping occur, change to phone view
-*/
+/* Tablet, Desktop view */
 @media screen and (min-width: 546px){
   html {
     background-size: 2000px 1300px;
