@@ -1,0 +1,172 @@
+/*
+Background CSS
+SRC: https://css-tricks.com/perfect-full-page-background-image/
+*/
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Fonts */
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Ubuntu Condensed';
+  font-size: 80px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+h1 a{
+  color: black;
+
+}
+
+h2 {
+  font-family: 'Open Sans Condensed';
+  font-size: 15px;
+  margin: 0 0 20px 0;
+}
+
+p {
+  font-family: 'PT Sans Narrow';
+  font-size: 16px;
+}
+
+/* Classes */
+.content {
+  grid-area: content;
+  text-align: left;
+}
+
+.contentIMG {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.current {
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 0px rgb(26,26,26);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+  "nav nav nav"
+  ". content ."
+  "footer footer footer";
+  grid-template-columns: 1fr 750px 1fr;
+  grid-template-rows: auto auto 70px;
+  text-align: center;
+}
+
+.home {
+  height: 216px;
+  width: 381px;
+}
+
+.nav {
+  display: inline;
+  margin-right: 12px;
+}
+
+nav {
+  /*border-bottom: solid 2px black;*/
+  grid-area: nav;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+/* footer */
+footer {
+  grid-area: footer;
+}
+
+.footer {
+  height: 30px;
+  padding: 0 5px 0 5px;
+  width: 30px;
+}
+
+
+
+/* *******************
+Media Query
+******************* */
+
+/* for older/ small phone */
+@media screen and (max-width: 374px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+/* Tablet, Desktop view */
+@media screen and (min-width: 546px){
+  html {
+    background-size: 2000px 1300px;
+    transition: 0.1s;
+  }
+
+  section {
+    height: 100%;
+  }
+
+  /* Font */
+  a {
+    transition: 0.2s;
+  }
+
+  a:hover {
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 0px rgb(26,26,26);
+    transition: 0.2s;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 23px;
+  }
+
+  /* Classes */
+  .nav {
+    margin-right: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    height: 40px;
+    padding: 0 15px 5px 0px;
+    width: 40px;
+    transition: 0.2s;
+  }
+
+  .footer:hover {
+    transition: 0.2s;
+    transform: scale(1.3);
+  }
+}
