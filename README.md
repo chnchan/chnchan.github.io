@@ -1,6 +1,7 @@
 # My Online Portfolio
 
-This is a currently work in progress website.
+This is a currently work in progress website. To access the page:
+https://chnchan.github.io/Chun-Hin-Chan/
 
 Using this website, I am hoping to further improve my web designing/programming
 skills through revising and improving every detail on this website. There is always
