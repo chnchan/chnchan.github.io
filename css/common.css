@@ -10,21 +10,16 @@ body {
 
 /* Fonts */
 a {
-  color: grey;
+  color: rgb(26,26,26);
   text-decoration: none;
 }
 
 h1 {
-  font-family: 'Ubuntu Condensed';
-  font-size: 80px;
+  font-family: 'Acme';
+  font-size: 35px;
   font-weight: normal;
   margin-top: 10px;
   margin-bottom: 30px;
-}
-
-h1 a{
-  color: black;
-
 }
 
 h2 {
@@ -34,11 +29,15 @@ h2 {
 }
 
 p {
-  font-family: 'PT Sans Narrow';
-  font-size: 16px;
+  font-family: 'Alegreya Sans';
+  font-size: 23px;
 }
 
 /* Classes */
+.center {
+  text-align: center;
+}
+
 .content {
   grid-area: content;
   text-align: left;
@@ -48,12 +47,12 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .current {
-  color: black;
   font-weight: bold;
-  text-shadow: 1px 0px rgb(26,26,26);
 }
 
 .grid {
@@ -62,7 +61,7 @@ p {
   "nav nav nav"
   ". content ."
   "footer footer footer";
-  grid-template-columns: 1fr 750px 1fr;
+  grid-template-columns: 1fr 800px 1fr;
   grid-template-rows: auto auto 70px;
   text-align: center;
 }
@@ -70,6 +69,11 @@ p {
 .home {
   height: 216px;
   width: 381px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
 }
 
 .nav {
@@ -119,33 +123,19 @@ Media Query
 
 /* Tablet, Desktop view */
 @media screen and (min-width: 546px){
-  html {
-    background-size: 2000px 1300px;
-    transition: 0.1s;
-  }
-
-  section {
-    height: 100%;
-  }
-
   /* Font */
   a {
     transition: 0.2s;
   }
 
   a:hover {
-    color: black;
     font-weight: bold;
     text-shadow: 1px 0px rgb(26,26,26);
     transition: 0.2s;
   }
 
   h1 {
-    font-size: 80px;
-  }
-
-  h2 {
-    font-size: 20px;
+    font-size: 35px;
   }
 
   p {
