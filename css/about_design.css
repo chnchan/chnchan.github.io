@@ -1,0 +1,40 @@
+body {
+  background: rgb(26,26,26);
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+nav {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.description {
+  display:inline-block;
+  text-align: left;
+}
+
+.main {
+  background: white;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}

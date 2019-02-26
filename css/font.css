@@ -1,0 +1,35 @@
+h1 {
+  font-family: 'Ostrich Sans Rounded';
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed';
+  font-size: 15px;
+  margin: 0 0 20px 0;
+}
+
+p {
+  font-family: 'Alegreya Sans';
+  font-size: 23px;
+}
+
+.navItem {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navItem a {
+  font-family: 'Ostrich Sans Dashed';
+}
+
+.navItem.current {
+  font-family: 'Ostrich Sans rounded';
+}
+
+
+/*
+ *  Media Query
+ */

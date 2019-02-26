@@ -1,0 +1,26 @@
+nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+  ". nav ."
+  ". main ."
+  ". footer .";
+  grid-template-rows: auto auto 70px;
+  grid-template-columns: 1fr 1200px 1fr;
+}
+
+.main {
+  grid-area: main;
+}
+
+
+/*
+ *  Media Query
+ */
