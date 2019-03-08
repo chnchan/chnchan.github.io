@@ -26,7 +26,10 @@ a {
 }
 
 .description {
+  border-left: solid rgb(30, 30, 30);
   display:inline-block;
+  margin-top: 50px;
+  padding-left: 50px;
   text-align: left;
 }
 
@@ -37,4 +40,26 @@ a {
 .link {
   color: blue;
   text-decoration: underline;
+}
+
+
+/*
+ *  Media Query
+ */
+
+@media screen and (max-width: 1200px) {
+  .description{
+    border-left: none;
+    margin-top: 10px;
+    padding: 0 20px 0 20px;
+    transition: 0.5s;  /* TODO add this up there later */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    width: auto;
+    height: 600px;
+    object-fit: cover;
+  }
 }

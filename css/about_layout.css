@@ -18,3 +18,13 @@
 /*
  *  Media Query
  */
+
+@media screen and (max-width: 800px) {
+ .main {
+   display: grid;
+   grid-template-areas:
+   "banner"
+   "description";
+   grid-template-columns: 1fr;
+ }
+}

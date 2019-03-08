@@ -1,0 +1,22 @@
+Add to your CSS:
+
+.css-transitions-only-after-page-load * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+And add some code to your global javascript file:
+
+$(document).ready(function () {
+    $(".css-transitions-only-after-page-load").each(function (index, element) {
+        setTimeout(function () { $(element).removeClass("css-transitions-only-after-page-load") }, 10);
+    });
+});
+
+Now you can mark any element on your page with css-transitions-only-after-page-load class:
+
+<div class="container css-transitions-only-after-page-load">
+...
+</div>
