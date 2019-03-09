@@ -1,22 +1,33 @@
-Add to your CSS:
+Change IOS fonts:
 
-.css-transitions-only-after-page-load * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  // set the body class
+  document.getElementsByTagName('body')[0].className+='mobile'
 }
 
-And add some code to your global javascript file:
 
-$(document).ready(function () {
-    $(".css-transitions-only-after-page-load").each(function (index, element) {
-        setTimeout(function () { $(element).removeClass("css-transitions-only-after-page-load") }, 10);
-    });
-});
+.body {
+    font-family: Comic Sans;
+}
+.header {
+    font-family: Arial;
+}
+.main {
+    font-family: Helvetica;
+}
+.footer {
+    font-family: sans-serif;
+}
 
-Now you can mark any element on your page with css-transitions-only-after-page-load class:
+#someOtherElement {
+    font-family: Times New Roman;
+}
 
-<div class="container css-transitions-only-after-page-load">
-...
-</div>
+.mobile .body,
+.mobile .header,
+.mobile .main, 
+.mobile .footer, 
+.mobile #someOtherElement {
+  font-family: 'Open Sans', sans-serif;
+}

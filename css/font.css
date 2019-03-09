@@ -1,19 +1,22 @@
 h1 {
-  font-family: 'Ostrich Sans Rounded';
-  font-size: 50px;
+  font-family: 'ralewaythin';
+  font-size: 45px;
   margin-top: 20px;
   margin-bottom: 30px;
+  transition: 0.5s;
 }
 
 h2 {
   font-family: 'Open Sans Condensed';
   font-size: 15px;
   margin: 0 0 20px 0;
+  transition: 0.5s;
 }
 
 p {
-  font-family: 'Alegreya Sans';
+  font-family: 'Open Sans Condensed';
   font-size: 23px;
+  transition: 0.5s;
 }
 
 .navItem {
@@ -36,19 +39,17 @@ p {
 
 @media screen and (max-width: 700px) {
   h1 {
-    font-size: 45px;
-    transition: 0.5s;
+    font-size: 40px;
   }
 
   p {
     font-size: 20px;
-    transition: 0.5s;
   }
 }
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   p {
@@ -58,7 +59,7 @@ p {
 
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   p {
