@@ -1,0 +1,24 @@
+.main {
+  display: grid;
+  grid-template-areas:
+  ". description .";
+  grid-template-columns: 1fr 800px 1fr;
+}
+
+.description {
+  grid-area: description;
+}
+
+
+/*
+ *  Media Query
+ */
+
+@media screen and (max-width: 800px) {
+ .main {
+   display: grid;
+   grid-template-areas:
+   "description";
+   grid-template-columns: 1fr;
+ }
+}
