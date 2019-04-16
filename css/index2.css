@@ -1,0 +1,59 @@
+body {
+  background: url(../src/img/.jpg) no-repeat center center fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.brand {
+  height: 280.8px;
+  width: 450px;
+  padding-bottom: 0;
+}
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navItem {
+  display: inline-block;
+  margin: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.navItem a {
+  color: black;
+  font-family: 'Ostrich Sans';
+  font-size: 34px;
+  text-decoration: none;
+  text-shadow: 0px 9px rgba(255,255,255,0);
+  transition: 0.5s;
+}
+
+.navItem a:hover {
+  text-shadow: 0px 0px black;
+  transition: 0.5s;
+}
+
+.socialIcon {
+  height: 42px;
+  padding: 0 5px 0 5px;
+  width: 42px;
+}
+
+.socialIcon:hover {
+  filter: invert(40%);
+  transform: rotate(360deg);
+  transition: 0.6s;
+}
