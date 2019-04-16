@@ -35,6 +35,10 @@ a {
   text-decoration: underline;
 }
 
+.pad_left_50 {
+    padding-left: 50px;
+}
+
 
 /*
  *  Media Query
