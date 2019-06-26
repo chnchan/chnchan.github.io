@@ -1,0 +1,18 @@
+.home img {
+  height: auto;
+  width: 95vw;
+  max-height: 400px;
+  max-width: 706px;
+  margin-bottom: 13px;
+}
+
+#profile {
+  margin-top: 50px;
+  border-radius: 50%;
+  height: 200px;
+  visibility: hidden;
+}
+
+#profile.show { /* to prevent visual glitch of previous image lingering */
+  visibility: visible;
+}
