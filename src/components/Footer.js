@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ReactComponent as Facebook } from '../img/facebook.svg';
 import { ReactComponent as Linkedin } from '../img/linkedin.svg';
 import { ReactComponent as Github } from '../img/github.svg';
@@ -8,7 +8,7 @@ import '../css/Footer.css';
 
 function Footer(props) {
   if ((props.detail === 'in_container' && props.page === 'home') ||
-        props.detail == undefined && props.page !== 'home') {
+        (props.detail === undefined && props.page !== 'home')) {
     return (
       <footer id='Footer'>
         <div className='social_media'>
