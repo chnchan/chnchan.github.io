@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e20e4e77.chunk.css",
+    "main.js": "/static/js/main.9aa24a49.chunk.js",
+    "main.js.map": "/static/js/main.9aa24a49.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.53ab7b79.chunk.js": "/static/js/2.53ab7b79.chunk.js",
+    "static/js/2.53ab7b79.chunk.js.map": "/static/js/2.53ab7b79.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2081ea4dd3048a87850cf1e1ba4cc573.js": "/precache-manifest.2081ea4dd3048a87850cf1e1ba4cc573.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e20e4e77.chunk.css.map": "/static/css/main.e20e4e77.chunk.css.map",
+    "static/media/CoursesWEB.pdf": "/static/media/CoursesWEB.df7c833a.pdf",
+    "static/media/ResumeWEB.pdf": "/static/media/ResumeWEB.588c1bc2.pdf",
+    "static/media/chun-hin-chan2.jpg": "/static/media/chun-hin-chan2.d2dd228c.jpg",
+    "static/media/email.f5b7ca73.svg": "/static/media/email.f5b7ca73.svg",
+    "static/media/facebook.156a46ef.svg": "/static/media/facebook.156a46ef.svg",
+    "static/media/github.23fc8f81.svg": "/static/media/github.23fc8f81.svg",
+    "static/media/linkedin.7cc0a741.svg": "/static/media/linkedin.7cc0a741.svg",
+    "static/media/logo.png": "/static/media/logo.4f5adb70.png"
+  }
+}
