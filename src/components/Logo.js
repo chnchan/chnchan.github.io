@@ -7,21 +7,26 @@ import '../css/Logo.css';
 function Logo(props) {
   if (props.page === 'home') 
     return (
-      <div className='home'>
-        <img src={logo} alt='logo' draggable='false'></img>
+      <div>
+        <img id='logo' src={logo} alt='logo' onLoad={show_logo} draggable='false'></img>
       </div>
     );
   else {
     return (
       <div>
-        <img id='profile' src={profile} alt='logo' onLoad={unhide_image} onClick={props.func} draggable='false'></img>
+        <img id='profile' src={profile} alt='profile' onLoad={show_profile} onClick={props.func} draggable='false'></img>
         <h1>Chun Hin Chan</h1>
       </div>
     );
   }
 }
 
-function unhide_image() {
+function show_logo() {
+  let logo = document.getElementById('logo');
+  logo.classList.add('show');
+}
+
+function show_profile() {
   let profile = document.getElementById('profile');
   profile.classList.add('show');
 }

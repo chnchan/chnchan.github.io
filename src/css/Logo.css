@@ -1,9 +1,14 @@
-.home img {
+#logo {
   height: auto;
   width: 95vw;
   max-height: 400px;
   max-width: 706px;
   margin-bottom: 13px;
+  visibility: hidden;
+}
+
+#logo.show {
+  visibility: visible;
 }
 
 #profile {

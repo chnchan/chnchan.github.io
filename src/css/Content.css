@@ -1,6 +1,10 @@
 #Content {
   max-height: 150px;
-  transition: max-height 5s;
+  transition: max-height 3s;
+}
+
+#Content.home { /* remove transition animation if going back home to avoid glitched animation */
+  transition: max-height 0s;
 }
 
 #Content.show {
@@ -18,14 +22,76 @@
   font-weight: 600;
 }
 
+#Page h2 {
+  font-size: 24px;
+}
+
+.spacing {
+  margin: 15px 0;
+}
+
+.side_by_side p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.side_by_side img {
+  display: none;
+}
+
+img.mobile {
+  display: inherit;
+  width: 100%;
+}
+
+.pad_l {
+  padding-left: 15px;
+}
+
+.pad_r {
+  padding-right: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+li:before {
+  content: '\25FD';
+  margin: 0 15px 0px -15px;
+}
+
 @media screen and (min-width: 768px) {
   #Page {
-    margin: 0 15%;
+    margin: 0 10%;
+  }
+
+  .side_by_side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .side_by_side img {
+    display: inherit;
+    height: 200px;
+  }
+
+  
+  img.mobile {
+    display: none;
   }
 }
 
 @media screen and (min-width: 1025px) {
   #Page {
-    margin: 0 20%;
+    margin: 0 25%;
   }
+
+  
 }

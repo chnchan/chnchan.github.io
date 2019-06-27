@@ -3,7 +3,7 @@
 }
 
 .bottom {
-  margin: 2rem auto 1rem;
+  margin: 2rem auto 2rem;
 }
 
 /* section break 5 from https://codepen.io/joshuar/pen/MwdYLP by joshuar (https://codepen.io/joshuar/)*/
@@ -21,7 +21,7 @@
 .section-break-5::before {
     background-color: snow;
     color: darken(rgb(200, 200, 200), 20%);
-    content: 'j';
+    content: '';
     display: inline-block;
     font-size: 1.6rem;
     left: 50%;
