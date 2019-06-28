@@ -38,6 +38,7 @@ header {
   display: flex;
   flex-direction: column;
   font-family: 'Raleway';
+  height: 445px;
 }
 
 header h1 {
