@@ -27,7 +27,6 @@
 
 .white_space {
   flex: 0 0 auto;
-  transition: flex 0.5s;
 }
 
 .white_space.home {
@@ -86,5 +85,10 @@ header nav p.active {
     color: rgb(85,26,139);
     text-shadow: 0px 0px rgba(85,26,139,1);
     transition: 0.3s;
+  }
+
+  .white_space {
+    flex: 0 0 auto;
+    transition: flex 1s;
   }
 }

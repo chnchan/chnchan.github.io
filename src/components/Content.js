@@ -12,21 +12,21 @@ function Page(props) {
     return (
       <div id='Page'>
         <div className='side_by_side'>
-          <img id='UCD' className='pad_r' src={UCD_logo} alt='UCD'></img>
+          <img id='UCD' className='pad_r' src={UCD_logo} alt='UCD' draggable='false'></img>
           <p>
             I am Chun Hin, or Hin for short. I am a 3rd year (turning 4th year) Computer Science undergraduate student at University of California, Davis. If you are interested in what I studied at Davis, I have compiled a list of the <a className='underline' href={CourseList}>courses</a> I've taken. I am currently still debating which sub-field to focus on, but I am most interested in becoming a software engineer, game developer, full stack developer. I've also dreamed of working in the field of computer vision, but I am afraid my lack of intuition in linear algebra will gets in the way.
           </p>
         </div>
 
         <div className='spacing'>
-          <img className='mobile' src={HK_mobile} alt='HK_mobile'></img>
+          <img className='mobile' src={HK_mobile} alt='HK_mobile' draggable='false'></img>
         </div>
 
         <div className='side_by_side'>
           <p>
             I am from a very well-known city, Hong Kong. I have been living in America for about 10 years now. Because of my background, I speak fluent English, Cantonese, and Mandarin. And, due to my interest in the Japanese culture, I am able to perform basic communication in Japanese as well.
           </p>
-          <img id='HK' className='pad_l' src={HK} alt='HK'></img>
+          <img id='HK' className='pad_l' src={HK} alt='HK' draggable='false'></img>
         </div>
 
         <div className='spacing'>
