@@ -29,8 +29,7 @@ function Page(props) {
           <img id='HK' className='pad_l' src={HK} alt='HK' draggable='false'></img>
         </div>
 
-        <div className='spacing'>
-        </div>
+        <div className='spacing'></div>
 
         <div className='side_by_side'>
           <p>

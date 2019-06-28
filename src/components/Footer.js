@@ -8,7 +8,7 @@ import '../css/Footer.css';
 
 function Footer(props) {
   return (
-    <footer id='Footer'>
+    <footer id='Footer' className={props.page}>
       <div className='social_media'>
         <div className='icon'>
           <a href='https://www.facebook.com/hin.chan.7731'><Facebook/></a>

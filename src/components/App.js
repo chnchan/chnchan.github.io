@@ -35,7 +35,7 @@ class App extends Component {
         <div className={whitespace}></div>
           
         <Content page={this.state.page}>
-          <Footer/>
+          <Footer page={this.state.page}/>
         </Content>
       </div>
     );
