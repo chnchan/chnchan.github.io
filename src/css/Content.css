@@ -9,7 +9,7 @@
 }
 
 #Page {
-  margin: 0 10%;
+  padding: 0 10%;
   text-align: left;
   font-family: 'Raleway';
   font-size: 17px;
@@ -61,7 +61,7 @@ li {
 
 li:before {
   content: '\25FD';
-  margin: 0 15px 0px -15px;
+  margin: 0 15px 0px -25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -74,7 +74,7 @@ li:before {
   }
 
   #Page {
-    margin: 0 10%;
+    transition: padding 1s;
   }
 
   .side_by_side {
@@ -90,16 +90,19 @@ li:before {
     height: 200px;
   }
 
-  
   img.mobile {
     display: none;
   }
+
+  li:before {
+    margin: 0 15px 0px -15px;
+  }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1300px) {
   #Page {
-    margin: 0 25%;
+    padding: 0 25%;
   }
 
-  
+
 }

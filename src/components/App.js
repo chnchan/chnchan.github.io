@@ -21,7 +21,7 @@ class App extends Component {
     let whitespace = 'white_space '+ this.state.page;
 
     return (
-      <div id="App" className={this.state.page}>
+      <div id="App">
         <div className={whitespace}></div>
         <header>
           <Logo page={this.state.page} func={this.change_page_home}/>
