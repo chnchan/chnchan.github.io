@@ -1,4 +1,4 @@
-.App {
+#App {
   text-align: center;
   display: -webkit-flex;
   display: flex;
@@ -6,6 +6,7 @@
   width: 100vw;
   overflow-y: scroll;
 }
+
 
 ::-webkit-scrollbar {
   width: 9px;
@@ -25,12 +26,8 @@
   background: #999999; 
 }
 
-.white_space {
-  flex: 0 0 auto;
-}
-
 .white_space.home {
-  flex: 1 0 auto;
+  padding-top: 120px;
 }
 
 header {
@@ -90,7 +87,11 @@ header nav p.active {
   }
 
   .white_space {
-    flex: 0 0 auto;
-    transition: flex 1s;
+    padding-top: 0;
+    transition: padding 2.5s;
+  }
+
+  .white_space.home{
+    transition: padding 0.5s;
   }
 }
