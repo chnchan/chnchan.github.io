@@ -4,7 +4,7 @@
 
 .white_space {
   padding-top: 0;
-  transition: padding 2.5s;
+  transition: padding 1.5s ease-out;
 }
 
 .white_space.home {

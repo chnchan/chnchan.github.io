@@ -4,6 +4,7 @@ import CourseList from '../pdf/CoursesWEB.pdf';
 import UCD_logo from '../img/UCD.png';
 import HK from '../img/HK2.jpg';
 import HK_mobile from '../img/HK2_v2.jpg';
+import Resume from '../pdf/ResumeWEB.pdf';
 import '../css/Content.css';
 import '../css/Footer.css'; // underline animation
 
@@ -39,7 +40,7 @@ function Page(props) {
 
         <Divider detail='bottom'/>
 
-        <h2>Qualifications</h2>
+        <h2>Skills</h2>
         <ul>
           <li>C/C++, Java, R, and Matlab</li>
           <li>HTML/CSS</li>
@@ -51,12 +52,24 @@ function Page(props) {
       </div>
     );
   }
-  else {
-    return(
+  else if (props.page === 'projects'){
+    return (
       <div id='Page'>
-        <div className='side_by_side'>
-          <p>aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa aa </p>
+        <div className='comp_vision'>
+          <h2>Computer Vision:</h2>
+          <div>
+            <ul>
+              <li>Image Resizing with Seaming Carving</li>
+            </ul>
+          </div>
         </div>
+      </div>
+    );
+  }
+  else {
+    return (
+      <div id='Page'>
+        <iframe src={Resume} title='my resume' width="100%" height="1200px"></iframe>
       </div>
     );
   }

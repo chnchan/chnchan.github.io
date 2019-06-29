@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Logo from './Logo'
 import Content from './Content'
 import Footer from './Footer';
-import Resume from '../pdf/ResumeWEB.pdf';
 import '../css/App.css';
 
 
@@ -11,10 +10,12 @@ class App extends Component {
     super(props);
     this.state = { page: 'home',
                     about: '',
-                    projects: '' };
+                    projects: '',
+                    resume: '' };
     this.change_page_home = this.change_page_home.bind(this);
     this.change_page_about = this.change_page_about.bind(this);
     this.change_page_projects = this.change_page_projects.bind(this);
+    this.change_page_resume = this.change_page_resume.bind(this);
   }
 
   render() {
@@ -29,7 +30,7 @@ class App extends Component {
           <nav>
             <p className={this.state.about} onClick={this.change_page_about}>About</p>
             <p className={this.state.projects} onClick={this.change_page_projects}>Projects</p>
-            <a href={Resume}>Resume</a>
+            <p className={this.state.resume} onClick={this.change_page_resume}>Resume</p>
           </nav>
         </header>
         <div className={whitespace}></div>
@@ -60,7 +61,8 @@ class App extends Component {
 
     this.setState({ page: 'about',
                       about: 'active',
-                      projects: '' });
+                      projects: '',
+                      resume: '' });
   }
 
   change_page_projects() {
@@ -71,7 +73,20 @@ class App extends Component {
 
     this.setState({ page: 'projects',
                       about: '',
-                      projects: 'active' });
+                      projects: 'active',
+                      resume: '' });
+  }
+
+  change_page_resume() {
+    if (this.state.page === 'home') {
+      let logo = document.getElementById('logo');
+      logo.classList.remove('show');
+    }
+
+    this.setState({ page: 'resume',
+                      about: '',
+                      projects: '',
+                      resume: 'active' });
   }
 }
 

@@ -1,13 +1,13 @@
 footer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  padding-bottom: 30px;
   margin-top: 20px;
 }
 
 footer.home {
   margin-top: 0;
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 footer p {
