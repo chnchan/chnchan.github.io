@@ -50,7 +50,8 @@ class App extends Component {
 
     this.setState({ page: 'home',
                       about: '',
-                      projects: '' });
+                      projects: '',
+                      resume: '' });
   }
 
   change_page_about() {

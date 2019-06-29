@@ -1,12 +1,16 @@
+import Collapse, {Panel} from 'rc-collapse';
 import React from 'react';
 import Divider from './Divider.js';
 import CourseList from '../pdf/CoursesWEB.pdf';
+import { ReactComponent as Arrow } from '../img/arrow1.svg';
 import UCD_logo from '../img/UCD.png';
 import HK from '../img/HK2.jpg';
 import HK_mobile from '../img/HK2_v2.jpg';
 import Resume from '../pdf/ResumeWEB.pdf';
 import '../css/Content.css';
 import '../css/Footer.css'; // underline animation
+import 'rc-collapse/assets/index.css';
+import '../css/MyPanel.css'
 
 function Page(props) {
   if (props.page === 'about') {
@@ -57,12 +61,19 @@ function Page(props) {
       <div id='Page'>
         <div className='comp_vision'>
           <h2>Computer Vision:</h2>
-          <div>
-            <ul>
-              <li>Image Resizing with Seaming Carving</li>
-            </ul>
-          </div>
+          <Collapse accordion={true}>
+            <Panel header="Image Resizing with Seaming Carving" disabled={true}>this is panel content</Panel>
+            <Panel header="Image Stitcher w/ User Selected Correspondence" disabled={true}>this is panel content2 or other</Panel>
+          </Collapse>
         </div>
+
+        {/* <div className='opengl'>
+          <h2>OpenGL:</h2>
+          <Collapse accordion={true}>
+            <Panel header="" disabled={true}>this is panel content</Panel>
+            <Panel header="">this is panel content2 or other</Panel>
+          </Collapse>
+        </div> */}
       </div>
     );
   }

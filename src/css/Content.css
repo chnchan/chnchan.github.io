@@ -8,7 +8,7 @@
 }
 
 #Page {
-  padding: 0 10%;
+  padding: 0 12vw;
   text-align: left;
   font-family: 'Raleway';
   font-size: 17px;
@@ -21,6 +21,11 @@
 
 #Page h2 {
   font-size: 24px;
+}
+
+#Page svg {
+  height: 18px;
+  transform: rotate(90deg);
 }
 
 .spacing {
@@ -102,6 +107,4 @@ li:before {
   #Page {
     padding: 0 25%;
   }
-
-
 }

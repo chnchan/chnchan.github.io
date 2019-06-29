@@ -17,7 +17,7 @@ function Footer(props) {
         
         <div className='icon'>
           <a href='https://www.linkedin.com/in/chun-hin-chan-a1492b160/'><Linkedin/></a>
-          <span className='icon_txt'>linkedin.com/in/chun-hin-chan</span>
+          <span className='icon_txt linkedin'>linkedin.com/in/chun-hin-chan</span>
         </div>
 
         <div className='icon'>
