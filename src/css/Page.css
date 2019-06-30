@@ -1,0 +1,120 @@
+#Page {
+  padding: 0 12vw;
+  text-align: left;
+  font-family: 'Raleway';
+  font-size: 17px;
+}
+
+#Page.resume {
+  padding: 0;
+}
+
+#Page a {
+  color: rgb(85,26,139);
+  font-weight: 600;
+}
+
+#Page h2 {
+  font-size: 24px;
+}
+
+#Page svg {
+  height: 18px;
+  transform: rotate(90deg);
+}
+
+.spacing {
+  margin: 15px 0;
+}
+
+.side_by_side p {
+  line-height: 1.7;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.side_by_side img {
+  display: none;
+}
+
+img.mobile {
+  display: inherit;
+  width: 100%;
+}
+
+.pad_l {
+  padding-left: 15px;
+}
+
+.pad_r {
+  padding-right: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+li:before {
+  content: '\25FD';
+  margin: 0 15px 0px -25px;
+}
+
+#Page > object {
+  width: 100%;
+}
+
+.iframe_container {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  padding-top: 125vh;
+}
+
+.iframe_container iframe {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #Page {
+    transition: padding 1s;
+  }
+
+  #Page.resume {
+    transition: padding 0.2s;
+  }
+
+  .side_by_side {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .side_by_side img {
+    display: inherit;
+    height: 200px;
+  }
+
+  img.mobile {
+    display: none;
+  }
+
+  li:before {
+    margin: 0 15px 0px -15px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #Page {
+    padding: 0 25%;
+  }
+}

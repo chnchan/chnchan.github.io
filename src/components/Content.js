@@ -1,13 +1,13 @@
-import Collapse, {Panel} from 'rc-collapse';
+import Collapse, { Panel } from 'rc-collapse';
 import React from 'react';
 import Divider from './Divider.js';
 import CourseList from '../pdf/CoursesWEB.pdf';
-import { ReactComponent as Arrow } from '../img/arrow1.svg';
 import UCD_logo from '../img/UCD.png';
 import HK from '../img/HK2.jpg';
 import HK_mobile from '../img/HK2_v2.jpg';
 import Resume from '../pdf/ResumeWEB.pdf';
 import '../css/Content.css';
+import '../css/Page.css';
 import '../css/Footer.css'; // underline animation
 import 'rc-collapse/assets/index.css';
 import '../css/MyPanel.css'
@@ -79,8 +79,10 @@ function Page(props) {
   }
   else {
     return (
-      <div id='Page'>
-        <iframe src={Resume} title='my resume' width="100%" height="1200px"></iframe>
+      <div id='Page' className={props.page}>
+        <div className='iframe_container'>
+          <iframe src={Resume} title='my resume'></iframe>
+        </div>
       </div>
     );
   }

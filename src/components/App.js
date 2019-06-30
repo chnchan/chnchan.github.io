@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Logo from './Logo'
 import Content from './Content'
 import Footer from './Footer';
+import Resume from '../pdf/ResumeWEB.pdf';
 import '../css/App.css';
 
 
@@ -18,29 +19,6 @@ class App extends Component {
     this.change_page_resume = this.change_page_resume.bind(this);
   }
 
-  render() {
-    let whitespace = 'white_space '+ this.state.page;
-
-    return (
-      <div id="App">
-        <div className={whitespace}></div>
-        <header>
-          <Logo page={this.state.page} func={this.change_page_home}/>
-          <h2>Undergrad Student | Computer Science</h2>
-          <nav>
-            <p className={this.state.about} onClick={this.change_page_about}>About</p>
-            <p className={this.state.projects} onClick={this.change_page_projects}>Projects</p>
-            <p className={this.state.resume} onClick={this.change_page_resume}>Resume</p>
-          </nav>
-        </header>
-        <div className={whitespace}></div>
-          
-        <Content page={this.state.page}>
-          <Footer page={this.state.page}/>
-        </Content>
-      </div>
-    );
-  }
 
   change_page_home() {
     if (this.state.page !== 'home') { // hide image before changing state to avoid see the residue of the previous state.
@@ -88,6 +66,31 @@ class App extends Component {
                       about: '',
                       projects: '',
                       resume: 'active' });
+  }
+
+  render() {
+    let whitespace = 'white_space '+ this.state.page;
+
+    return (
+      <div id="App">
+        <div className={whitespace}></div>
+        <header>
+          <Logo page={this.state.page} func={this.change_page_home}/>
+          <h2>Undergrad Student | Computer Science</h2>
+          <nav>
+            <p className={this.state.about} onClick={this.change_page_about}>About</p>
+            <p className={this.state.projects} onClick={this.change_page_projects}>Projects</p>
+            <p id='resume' className={this.state.resume} onClick={this.change_page_resume}>Resume</p>
+            <a id='resume_mobile' className={this.state.resume} href={Resume}>Resume</a>
+          </nav>
+        </header>
+        <div className={whitespace}></div>
+          
+        <Content page={this.state.page}>
+          <Footer page={this.state.page}/>
+        </Content>
+      </div>
+    );
   }
 }
 
