@@ -61,7 +61,7 @@ header nav a {
   margin-bottom: 1em;
 }
 
-header nav p.active {
+header nav p.active, header nav a.active {
   color: rgb(85,26,139);
 }
 

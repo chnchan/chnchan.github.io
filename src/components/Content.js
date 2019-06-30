@@ -80,9 +80,12 @@ function Page(props) {
   else {
     return (
       <div id='Page' className={props.page}>
-        <div className='iframe_container'>
+        <object data={Resume} type="application/pdf" width="100%" height="800">
+          <p>Seems like your browser doesn't have an .pdf plugin. Press <a href={Resume}>here</a> to download instead.</p>
+        </object>
+        {/* <div className='iframe_container'>
           <iframe src={Resume} title='my resume'></iframe>
-        </div>
+        </div> */}
       </div>
     );
   }
