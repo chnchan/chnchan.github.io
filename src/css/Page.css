@@ -59,30 +59,6 @@ li:before {
   margin: 0 15px 0px -25px;
 }
 
-#Page > object {
-  width: 100%;
-}
-
-#Page > iframe {
-  width: 100%;
-  height: 950px;
-}
-
-.iframe_container {
-  position: relative;
-  overflow: hidden;
-  border: none;
-  padding-top: 125vh;
-}
-
-.iframe_container iframe {
-  top: 0;
-  left: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
 @media screen and (min-width: 768px) {
   #Page {
     transition: padding 1s;

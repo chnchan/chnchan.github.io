@@ -5,7 +5,6 @@ import CourseList from '../pdf/CoursesWEB.pdf';
 import UCD_logo from '../img/UCD.png';
 import HK from '../img/HK2.jpg';
 import HK_mobile from '../img/HK2_v2.jpg';
-import Resume from '../pdf/ResumeWEB.pdf';
 import '../css/Content.css';
 import '../css/Page.css';
 import '../css/Footer.css'; // underline animation
@@ -62,7 +61,7 @@ function Page(props) {
         <div className='comp_vision'>
           <h2>Computer Vision:</h2>
           <Collapse accordion={true}>
-            <Panel header="Image Resizing with Seaming Carving" disabled={true}>this is panel content</Panel>
+            <Panel header="Image Resizing with Seaming Carving">this is panel content</Panel>
             <Panel header="Image Stitcher w/ User Selected Correspondence" disabled={true}>this is panel content2 or other</Panel>
           </Collapse>
         </div>
@@ -77,20 +76,18 @@ function Page(props) {
       </div>
     );
   }
-  else {
-    return (
-      <div id='Page' className={props.page}>
-        <object data={Resume} type="application/pdf" width="100%" height="800">
-          <p>Seems like your browser doesn't have an .pdf plugin. Press <a href={Resume}>here</a> to download instead.</p>
-        </object>
-        {/* <div className='iframe_container'>
-          <iframe src={Resume} title='my resume'></iframe>
-        </div> */}
-      </div>
-    );
-  }
-}
 
+  // // embed resume inside the html. Looks terrible on ios devices so disabled for now unless I found a better alternative than <a>
+  // else { 
+  //   return (
+  //     <div id='Page' className={props.page}>
+  //       <object data={Resume} type="application/pdf" width="100%" height="800">
+  //         <p>Seems like your browser doesn't have an .pdf plugin. Press <a href={Resume}>here</a> to download instead.</p>
+  //       </object>
+  //     </div>
+  //   );
+  // }
+}
 
 function Content(props) {
   if (props.page === 'home')

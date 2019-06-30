@@ -80,8 +80,8 @@ class App extends Component {
           <nav>
             <p className={this.state.about} onClick={this.change_page_about}>About</p>
             <p className={this.state.projects} onClick={this.change_page_projects}>Projects</p>
-            <p id='resume' className={this.state.resume} onClick={this.change_page_resume}>Resume</p>
-            <a id='resume_mobile' className={this.state.resume} href={Resume}>Resume</a>
+            {/* <p id='resume' className={this.state.resume} onClick={this.change_page_resume}>Resume</p> */}
+            <a className={this.state.resume} href={Resume} target='_blank' rel='noopener noreferrer'>Resume</a>
           </nav>
         </header>
         <div className={whitespace}></div>
