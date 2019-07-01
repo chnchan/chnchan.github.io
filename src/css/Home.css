@@ -1,0 +1,34 @@
+#Home {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+#Home > .whitespace {
+  flex: 1 0 auto;
+}
+
+#Home.page-enter {
+  animation: slideInLeft 0.5s forwards;
+}
+
+#Home.page-exit {
+  animation: slideOutRight 0.5s forwards;
+}
+
+#logo {
+  height: auto;
+  width: 95vw;
+  max-height: 400px;
+  max-width: 706px;
+  margin-bottom: 13px;
+  visibility: hidden;
+}
+
+#logo.show {
+  visibility: visible;
+}

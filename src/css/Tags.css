@@ -1,0 +1,50 @@
+.Tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.tag {
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  margin-right: 4px;
+  padding: 2px 7px;
+
+}
+
+.t1 {
+  background: #363636;
+  color: #fff;
+}
+
+.t2 {
+  background:  #ff3860;
+  color: #fff;
+}
+
+.t3 {
+  background: #6B5B95;
+  color: #fff;
+}
+
+.t4 {
+  background: #23d160;
+  color: #fff;
+}
+
+.t5 {
+  background: #00d1b2;
+  color: #fff;
+}
+/* 
+Popular colors:
+
+black: #363636
+aqua: #00d1b2
+blue: #3273dc
+light blue: #209cee
+green: #23d160
+purple: #6B5B95
+red: #ff3860
+*/
