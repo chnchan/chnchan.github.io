@@ -17,15 +17,15 @@ function App() {
               <CSSTransition timeout={500} classNames="page" key={location.key}>
                 <Switch location={location}>
                   {/* <Route exact path='/' component={Home}/> */}
-                  <Route exact path='/' render={() => (
+                  <Route exact path={process.env.PUBLIC_URL + '/'} render={() => (
                     <Home onloadFunc={show_logo}/>
                   )}/>
                   {/* <Route exact path='/about' component={About}/> */}
-                  <Route exact path='/about' render={() => (
+                  <Route exact path={process.env.PUBLIC_URL + '/about'} render={() => (
                     <About onloadFunc={show_profile}/>
                   )}/>
                   {/* <Route exact path='/projects' component={Projects}/> */}
-                  <Route exact path='/projects' render={() => (
+                  <Route exact path={process.env.PUBLIC_URL + '/projects'} render={() => (
                     <Projects onloadFunc={show_profile}/>
                   )}/>
                 </Switch>
