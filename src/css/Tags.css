@@ -1,6 +1,7 @@
 .Tags {
-  display: flex;
-  flex-direction: row;
+  display: none;
+  user-select: none;
+  padding-left: 5px;
 }
 
 .tag {
@@ -10,7 +11,6 @@
   margin: 0;
   margin-right: 4px;
   padding: 2px 7px;
-
 }
 
 .t1 {
@@ -18,9 +18,17 @@
   color: #fff;
 }
 
+.t1:hover {
+  background: #202020;
+}
+
 .t2 {
   background:  #ff3860;
   color: #fff;
+}
+
+.t2:hover {
+  background: #eb1e48;
 }
 
 .t3 {
@@ -28,17 +36,30 @@
   color: #fff;
 }
 
+.t3:hover {
+  background: #524378;
+}
+
 .t4 {
   background: #23d160;
   color: #fff;
+}
+
+.t4:hover {
+  background: #12b34a;
 }
 
 .t5 {
   background: #00d1b2;
   color: #fff;
 }
+
+.t5:hover {
+  background: #00b398;
+}
+
 /* 
-Popular colors:
+Popular colors online:
 
 black: #363636
 aqua: #00d1b2
@@ -48,3 +69,10 @@ green: #23d160
 purple: #6B5B95
 red: #ff3860
 */
+
+@media screen and (min-width: 768px) {
+  .Tags {
+    display: flex;
+    flex-direction: row;
+  }
+}

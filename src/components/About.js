@@ -27,7 +27,7 @@ function About(props) {
           <p className='active'>About</p>
           <Link to='/projects'>Projects</Link>
 
-          <a href={Resume} target='_blank' rel='noopener noreferrer'>Resume</a>
+          <a href={Resume} rel='noopener noreferrer'>Resume</a>
         </nav>
       </header>
 

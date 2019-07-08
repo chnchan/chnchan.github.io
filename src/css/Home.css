@@ -13,11 +13,11 @@
 }
 
 #Home.page-enter {
-  animation: slideInLeft 0.5s forwards;
+  animation: slideInRight 0.5s forwards;
 }
 
 #Home.page-exit {
-  animation: slideOutRight 0.5s forwards;
+  animation: slideOutLeft 0.5s forwards;
 }
 
 #logo {

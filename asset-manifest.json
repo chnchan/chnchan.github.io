@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.d75ae932.chunk.css",
-    "main.js": "/static/js/main.018ee7dd.chunk.js",
-    "main.js.map": "/static/js/main.018ee7dd.chunk.js.map",
+    "main.css": "/static/css/main.fb612739.chunk.css",
+    "main.js": "/static/js/main.edd23522.chunk.js",
+    "main.js.map": "/static/js/main.edd23522.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/css/2.194e2ed7.chunk.css": "/static/css/2.194e2ed7.chunk.css",
-    "static/js/2.aaf95494.chunk.js": "/static/js/2.aaf95494.chunk.js",
-    "static/js/2.aaf95494.chunk.js.map": "/static/js/2.aaf95494.chunk.js.map",
+    "static/js/2.e4e4b0cc.chunk.js": "/static/js/2.e4e4b0cc.chunk.js",
+    "static/js/2.e4e4b0cc.chunk.js.map": "/static/js/2.e4e4b0cc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.24809cb4eef8b3a5e39121e624bfb759.js": "/precache-manifest.24809cb4eef8b3a5e39121e624bfb759.js",
+    "precache-manifest.581acfcd039400874011bfa23a665e49.js": "/precache-manifest.581acfcd039400874011bfa23a665e49.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.194e2ed7.chunk.css.map": "/static/css/2.194e2ed7.chunk.css.map",
-    "static/css/main.d75ae932.chunk.css.map": "/static/css/main.d75ae932.chunk.css.map",
+    "static/css/main.fb612739.chunk.css.map": "/static/css/main.fb612739.chunk.css.map",
     "static/media/CoursesWEB.pdf": "/static/media/CoursesWEB.df7c833a.pdf",
     "static/media/HK2.jpg": "/static/media/HK2.63d3ce11.jpg",
     "static/media/HK2_v2.jpg": "/static/media/HK2_v2.ee41cee6.jpg",
@@ -22,7 +22,15 @@
     "static/media/email.f5b7ca73.svg": "/static/media/email.f5b7ca73.svg",
     "static/media/facebook.156a46ef.svg": "/static/media/facebook.156a46ef.svg",
     "static/media/github.23fc8f81.svg": "/static/media/github.23fc8f81.svg",
+    "static/media/hassle_free_v1_1.png": "/static/media/hassle_free_v1_1.dc26e779.png",
+    "static/media/hassle_free_v1_2.png": "/static/media/hassle_free_v1_2.e59bf25b.png",
+    "static/media/hassle_free_v2.png": "/static/media/hassle_free_v2.e7640249.png",
     "static/media/linkedin.7cc0a741.svg": "/static/media/linkedin.7cc0a741.svg",
-    "static/media/logo.png": "/static/media/logo.4f5adb70.png"
+    "static/media/logo.png": "/static/media/logo.4f5adb70.png",
+    "static/media/ps1.pdf": "/static/media/ps1.99141fbe.pdf",
+    "static/media/ps2.pdf": "/static/media/ps2.f33dbfa6.pdf",
+    "static/media/weather_app_demo.gif": "/static/media/weather_app_demo.a72b5b3c.gif",
+    "static/media/weather_app_mobile_demo.gif": "/static/media/weather_app_mobile_demo.9160ddbb.gif",
+    "static/media/weather_app_tablet.png": "/static/media/weather_app_tablet.6889bf97.png"
   }
 }

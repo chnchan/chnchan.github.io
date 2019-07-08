@@ -20,7 +20,7 @@ function Home(props) {
           <Link to='/about'>About</Link>
           <Link to='/projects'>Projects</Link>
 
-          <a href={Resume} target='_blank' rel='noopener noreferrer'>Resume</a>
+          <a href={Resume} rel='noopener noreferrer'>Resume</a>
         </nav>
       </header>
       <div className='whitespace'></div>

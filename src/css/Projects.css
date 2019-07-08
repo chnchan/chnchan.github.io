@@ -7,11 +7,11 @@
 }
 
 #Projects.page-enter {
-  animation: slideInLeft 0.5s forwards;
+  animation: slideInRight 0.5s forwards;
 }
 
 #Projects.page-exit {
-  animation: slideOutRight 0.5s forwards;
+  animation: slideOutLeft 0.5s forwards;
 }
 
 #profile {
@@ -32,6 +32,7 @@
 
 .rc-collapse > .rc-collapse-item > .rc-collapse-header {
   color: black;
+  user-select: none;
 }
 
 .rc-collapse > .rc-collapse-item-disabled > .rc-collapse-header {
@@ -40,4 +41,48 @@
 
 .rc-collapse > .rc-collapse-item > .rc-collapse-header .rc-collapse-extra {
   margin-right: 12px;
+}
+
+.rc-collapse-content-box > img {
+  width: 100%;
+}
+
+.rc-collapse-content-box > p.pad_bottom {
+  padding-bottom: 10px;
+}
+
+.rc-collapse-content-box > p.pad_top {
+  padding-top: 10px;
+}
+
+.img_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#Projects figure {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+#Projects figure > img{
+  width: 100%;
+  border: 1px solid #aaa;
+}
+
+#Projects figure > figcaption {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  #Projects figure > img {
+    width: 450px;
+  }
+
+  #Projects .height_based figure > img {
+    width: auto;
+    height: 350px;
+  }
 }
