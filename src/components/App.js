@@ -14,7 +14,7 @@ function App() {
         return (
           <div id='App'>
             <TransitionGroup component={null}>
-              <CSSTransition timeout={500} classNames="page" key={location.key}>
+              <CSSTransition timeout={500} classNames="page" key={location.pathname}>
                 <Switch location={location}>
                   {/* <Route exact path='/' component={Home}/> */}
                   <Route exact path={process.env.PUBLIC_URL + '/'} render={() => (
