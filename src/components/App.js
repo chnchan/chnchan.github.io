@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, HashRouter } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Home from './Home.js';
@@ -9,7 +9,7 @@ import '../css/App.css';
 
 function App() {
   return (
-    <Router history={HashRouter}>
+    <Router>
       <Route render={({location}) => {
         return (
           <div id='App'>
