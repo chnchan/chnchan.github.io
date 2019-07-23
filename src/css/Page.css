@@ -6,6 +6,17 @@
   transition: padding 0.5s;
 }
 
+#Page p {
+  line-height: 1.7;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#Page ol {
+  line-height: 1.7;
+  margin: 0;
+}
+
 #Page a {
   color: rgb(85,26,139);
   font-weight: 600;

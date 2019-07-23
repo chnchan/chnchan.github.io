@@ -14,17 +14,6 @@
   animation: slideOutLeft 0.5s forwards;
 }
 
-#profile {
-  margin-top: 50px;
-  border-radius: 50%;
-  height: 200px;
-  visibility: hidden;
-}
-
-#profile.show {
-  visibility: visible;
-}
-
 .rc-collapse {
   border-radius: 3px;
   border: 1px solid #d9d9d9;
@@ -47,11 +36,11 @@
   width: 100%;
 }
 
-.rc-collapse-content-box > p.pad_bottom {
+.pad_bottom {
   padding-bottom: 10px;
 }
 
-.rc-collapse-content-box > p.pad_top {
+.pad_top {
   padding-top: 10px;
 }
 
@@ -69,6 +58,7 @@
 
 #Projects figure > img{
   width: 100%;
+  padding: 1px;
   border: 1px solid #aaa;
 }
 
@@ -79,6 +69,14 @@
 @media screen and (min-width: 768px) {
   #Projects figure > img {
     width: 450px;
+  }
+
+  #Projects figure > img.small {
+    width: 400px;
+  }
+
+  #Projects figure > img.large {
+    width: 600px;
   }
 
   #Projects .height_based figure > img {

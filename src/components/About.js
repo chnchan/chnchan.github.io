@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ReactComponent as BackButton } from '../img/back.svg';
 
 import Footer from './Footer';
 import profile from '../img/chun-hin-chan2.jpg';
@@ -18,9 +19,13 @@ function About(props) {
   return (
     <div id='About'>
       <header>
-        <Link to='/'>
-          <img id='profile' src={profile} alt='profile' onLoad={props.onloadFunc} draggable='false'></img>
-        </Link>
+        <div id='back_button'>
+          <Link to='/'>
+            <BackButton/>
+          </Link>
+        </div>
+
+        <img id='profile' src={profile} alt='profile' onLoad={props.onloadFunc} draggable='false'></img>
         <h1>Chun Hin Chan</h1>
         <h2>Undergrad Student | Computer Science</h2>
         <nav>

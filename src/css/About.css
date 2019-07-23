@@ -14,23 +14,6 @@
   animation: slideOutLeft 0.5s forwards;
 }
 
-#profile {
-  margin-top: 50px;
-  border-radius: 50%;
-  height: 200px;
-  visibility: hidden;
-}
-
-#profile.show {
-  visibility: visible;
-}
-
-#Page p {
-  line-height: 1.7;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
 #About .side_by_side > img {
   display: none;  
 }

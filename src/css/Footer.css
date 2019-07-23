@@ -37,36 +37,7 @@ footer .social_media svg {
   visibility: hidden;
 }
 
-.underline {
-  position: relative;
-  text-decoration: none;
-  color: black;
-}
-
-.underline:before {
-  /* from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ by Tobias Bjerrome Ahlin */
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(60,60,60);
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-}
-
 @media screen and (min-width: 768px) {
-  .underline:hover:before {
-    /* from https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ by Tobias Bjerrome Ahlin */
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-
   .social_media svg:hover {
     fill: rgb(85,26,139);
   }
