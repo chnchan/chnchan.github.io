@@ -1,12 +1,13 @@
+// Component
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Collapse, { Panel } from 'rc-collapse';
+import ModalImage from "react-modal-image";
 import { ReactComponent as BackButton } from '../img/back.svg';
-
 import Footer from './Footer';
 import Tags from './Tags';
+// Images
 import profile from '../img/chun-hin-chan2.jpg';
-
 import hassle_free_1_1 from '../projects/web/hassle_free_v1_1.png';
 import hassle_free_1_2 from '../projects/web/hassle_free_v1_2.png';
 import hassle_free_2 from '../projects/web/hassle_free_v2.png';
@@ -22,13 +23,14 @@ import my_web_v1_home from '../projects/web/v1_home.png';
 import my_web_v1_projects from '../projects/web/v1_projects.png';
 import my_web_v1_1_home from '../projects/web/v1.1_home.png';
 import my_web_v2_demo from '../projects/web/v2_demo.gif';
-
+// Pdf
 import com_vis_ps1 from '../projects/com_vis/ps1.pdf';
 import com_vis_ps2 from '../projects/com_vis/ps2.pdf';
-
 import Resume from '../pdf/ResumeWEB.pdf';
+// CSS
 import 'rc-collapse/assets/index.css';
 import '../css/Projects.css';
+import '../css/Modal.css';
 import '../css/Divider.css';
 import '../css/Animations.css';
 
@@ -69,11 +71,11 @@ function Projects(props) {
 
                 <div className='img_container'>
                   <figure>
-                    <img src={hassle_free_1_1} alt='hassle-free-v1-1'></img>
+                    <ModalImage small={hassle_free_1_1} large={hassle_free_1_1} alt='hassle_free_1_1.png' hideZoom={true}/>
                     <figcaption>&#x25B2; Hassle-free v1 Homepage</figcaption>
                   </figure>
                   <figure>
-                    <img src={hassle_free_1_2} alt='hassle-free-v1-2'></img>
+                    <ModalImage small={hassle_free_1_2} large={hassle_free_1_2} alt='hassle_free_1_2.png' hideZoom={true}/>
                     <figcaption>&#x25B2; Hassle-free v1 Main Page</figcaption>
                   </figure>
                 </div>
@@ -81,8 +83,8 @@ function Projects(props) {
                 <p className='pad_top pad_bottom'>I didn't know there are libraries like React.js that can swap componenets in and out at the time, so I did a bare bone version of it when implementating this website. The website does what I originally wanted and I was very happy, but I eventually got tired of this childish look and wanted something that looks more professional, which is why I made Hassle-free v2: <a className='underline' href='https://chnchan.github.io/Virtual-Receipt/'>https://chnchan.github.io/Virtual-Receipt/</a>. I am really happy how the reciept-looking theme turned out so this would most likely be the last version unless I came up with a better design.</p>
 
                 <div className='img_container'>
-                  <figure>
-                    <img className='large' src={hassle_free_2} alt='hassle_free_2'></img>
+                  <figure className='large'>
+                    <ModalImage small={hassle_free_2} large={hassle_free_2} alt='hassle_free_2.png' hideZoom={true}/>
                     <figcaption>&#x25B2; Hassle-free v2</figcaption>
                   </figure>
                 </div>
@@ -104,8 +106,8 @@ function Projects(props) {
                 </p>
 
                 <div className='img_container'>
-                  <figure>
-                    <img className='large' src={weather_app_demo} alt='weather_app_demo'></img>
+                  <figure className='large'>
+                    <ModalImage small={weather_app_demo} large={weather_app_demo} alt='weather_app_demo.gif' hideZoom={true}/>
                     <figcaption>&#x25B2; Weather Web App Demo</figcaption>
                   </figure>
                 </div>
@@ -117,16 +119,16 @@ function Projects(props) {
                 
                 <div className='img_container height_based'>
                   <figure>
-                    <img src={weather_app_mobile} alt='weather_app_mobile'></img>
-                    <figcaption>&#x25B2; Weather Web App Mobile View</figcaption>
+                    <ModalImage small={weather_app_mobile} large={weather_app_mobile} alt='weather_app_mobile.gif' hideZoom={true}/>
+                    <figcaption>&#x25B2; Mobile View</figcaption>
                   </figure>
                   <figure>
-                    <img src={weather_app_tablet} alt='weather_app_tablet'></img>
-                    <figcaption>&#x25B2; Weather Web App Tablet View</figcaption>
+                    <ModalImage small={weather_app_tablet} large={weather_app_tablet} alt='weather_app_tablet.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Tablet View</figcaption>
                   </figure>
                 </div>
               </Panel>
-              <Panel header='Lango! - the Flashcard Web App w/ Node.js, React.js, Google Translate API' extra={<Tags t1='HTML' t2='CSS' t3='JS' t4='SQLite3'/>}>
+              <Panel header='Lango! - the Flashcard Web App' extra={<Tags t1='HTML' t2='CSS' t3='JS' t4='SQLite3'/>}>
                 <p>
                   <span role='img' aria-label="books">&#128218;</span> This is a course project at UC Davis designed by course TA, Jamie Oka.
                 </p>
@@ -148,8 +150,8 @@ function Projects(props) {
                   <li className='pad_bottom'>User will login via Google.</li>
 
                   <div className='img_container'>
-                    <figure>
-                      <img className='large' src={lango_login_demo} alt='lango_login_demo'></img>
+                    <figure className='large'>
+                      <ModalImage small={lango_login_demo} large={lango_login_demo} alt='lango_login_demo.gif' hideZoom={true}/>
                       <figcaption>&#x25B2; Lango! - login</figcaption>
                     </figure>
                   </div>
@@ -158,8 +160,8 @@ function Projects(props) {
                   <li className='pad_bottom'>The flashcard should be stored upon pressing the Save button.</li>
 
                   <div className='img_container'>
-                    <figure>
-                      <img className='large' src={lango_add_demo} alt='lango_add_demo'></img>
+                    <figure className='large'>
+                      <ModalImage small={lango_add_demo} large={lango_add_demo} alt='lango_add_demo.gif' hideZoom={true}/>
                       <figcaption>&#x25B2; Lango! - adding flashcard</figcaption>
                     </figure>
                   </div>
@@ -169,8 +171,8 @@ function Projects(props) {
                   <li className='pad_bottom'>Upon pressing on the flashcard or pressing {"<"}Enter{">"} after inputing the answer, the flashcard should flip and show either Correct! or the correct answer if the user's answer is incorrect.</li>
 
                   <div className='img_container'>
-                    <figure>
-                      <img className='large' src={lango_review_demo} alt='lango_review_demo'></img>
+                    <figure className='large'>
+                      <ModalImage small={lango_review_demo} large={lango_review_demo} alt='lango_review_demo.gif' hideZoom={true}/>
                       <figcaption>&#x25B2; Lango! - reviewing flashcard</figcaption>
                     </figure>
                   </div>
@@ -186,23 +188,24 @@ function Projects(props) {
 
                 <div className='img_container'>
                   <figure>
-                    <img className='small' src={lango_user_db} alt='lango_user_db'></img>
+                    <ModalImage small={lango_user_db} large={lango_user_db} alt='lango_user_db.png' hideZoom={true}/>
                     <figcaption>&#x25B2; Users.db stores mapping of Google ID to User ID</figcaption>
                   </figure>
 
-                  <figure>
-                    <img className='small' src={lango_flashcard_db} alt='lango_flashcard_db'></img>
+                  <figure className='small'>
+                    <ModalImage small={lango_flashcard_db} large={lango_flashcard_db} alt='lango_flashcard_db.png' hideZoom={true}/>
                     <figcaption>&#x25B2; Flashcards.db stores Input Text, Translated Text, User ID, Times Seen, <br/>Times Correct</figcaption>
                   </figure>
                 </div>
               </Panel>
-              <Panel header='My Personal Website w/ React.js' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
+              <Panel header='My Personal Website' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
                 <p className='pad_bottom'>
                   <span role='img' aria-label="package">&#128230;</span> The current version, <strong>V3</strong>, of the project uses:{" "}
                   <a target='_blank' className='underline' href='https://github.com/facebook/create-react-app' rel="noopener noreferrer">React</a>,{" "}
                   <a target='_blank' className='underline' href='https://www.npmjs.com/package/react-router-dom' rel="noopener noreferrer">react-router-dom</a>,{" "}
                   <a target='_blank' className='underline' href='https://www.npmjs.com/package/react-transition-group' rel="noopener noreferrer">react-transition-group</a>,{" "}
-                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/react-router-dom' rel="noopener noreferrer">rc-collapse</a>,{" "} 
+                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/react-router-dom' rel="noopener noreferrer">rc-collapse</a>,{" "}
+                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/react-modal-image' rel="noopener noreferrer">react-modal-image</a>.
                 </p>
 
                 <p className='pad_top pad_bottom'>
@@ -212,26 +215,26 @@ function Projects(props) {
                 <p><strong>V1:</strong> HTML, CSS</p>
                 <div className='img_container'>
                   <figure>
-                    <img src={my_web_v1_home} alt='my_web_v1_home'></img>
+                    <ModalImage small={my_web_v1_home} large={my_web_v1_home} alt='my_web_v1_home.png' hideZoom={true}/>
                     <figcaption>&#x25B2; homepage v1</figcaption>
                   </figure>
 
                   <figure>
-                    <img src={my_web_v1_projects} alt='my_web_v1_projects'></img>
+                    <ModalImage small={my_web_v1_projects} large={my_web_v1_projects} alt='my_web_v1_projects.png' hideZoom={true}/>
                     <figcaption>&#x25B2; projects page v1</figcaption>
                   </figure>
                 </div>
                 <div className='img_container left'>
                   <figure>
-                    <img src={my_web_v1_1_home} alt='my_web_v1_1_home'></img>
+                    <ModalImage small={my_web_v1_1_home} large={my_web_v1_1_home} alt='my_web_v1_1_home.png' hideZoom={true}/>
                     <figcaption>&#x25B2; homepage v1_1</figcaption>
                   </figure>
                 </div>
 
                 <p className='pad_top'><strong>V2:</strong> HTML, CSS</p>
                 <div className='img_container'>
-                  <figure>
-                    <img className='large' src={my_web_v2_demo} alt='my_web_v2_demo'></img>
+                  <figure className='large'>
+                    <ModalImage small={my_web_v2_demo} large={my_web_v2_demo} alt='my_web_v2_demo.gif' hideZoom={true}/>
                     <figcaption>&#x25B2; v2 demo</figcaption>
                   </figure>
                 </div>
@@ -260,7 +263,7 @@ function Projects(props) {
               <Panel disabled='true' header='3D Transformation and Projection System' extra={<Tags t1='C++' t3='OpenGL'/>}>
                 this is panel content2 or other
               </Panel>
-              <Panel disabled='true' header="3D System with Phong Lighting Model, Gourand Shading, and Painter's Algorithm" extra={<Tags t1='C++' t3='OpenGL'/>}>
+              <Panel disabled='true' header="3D System with Phong Lighting Model, Gourand Shading, and Painter's Algorithm" extra={<Tags t0='In Progress' t1='C++' t3='OpenGL'/>}>
                 this is panel content2 or other
               </Panel>
             </Collapse>

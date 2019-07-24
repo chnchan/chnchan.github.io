@@ -65,87 +65,76 @@
 
 #Projects figure {
   margin: 0;
-  margin-bottom: 5px;
 }
 
-#Projects figure > img{
+#Projects figure img:not(.__react_modal_image__medium_img) {
   width: 100%;
-  padding: 1px;
   border: 1px solid #aaa;
+  padding: 2px;
+}
+
+#Projects figure figcaption {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  #Projects figure img:not(.__react_modal_image__medium_img) {
+    width: 450px;
+  }
+
+  #Projects figure.small img:not(.__react_modal_image__medium_img) {
+    width: 400px;
+  }
+
+  #Projects figure.large img:not(.__react_modal_image__medium_img) {
+    width: 600px;
+  }
+
+  #Projects .height_based figure img:not(.__react_modal_image__medium_img) {
+    width: auto;
+    height: 350px;
+  }
+}
+
+/* 
+#Projects figure {
+  margin: 0;
+}
+
+#Projects figure > div {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #aaa;
+  margin-bottom: 5px;
 }
 
 #Projects figure > figcaption {
   font-size: 12px;
 }
 
-#Projects .tooltip {
-  display: flex;
-  flex-direction: row;
-}
-
-#Projects .tooltip > .icon {
-  margin-right: 15px;
-}
-
-#Projects .icon_txt {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  #Projects figure > img {
+  #Projects figure > div {
     width: 450px;
   }
 
-  #Projects figure > img.small {
+  #Projects figure > div {
+    width: 450px;
+  }
+
+  #Projects figure > div.small {
     width: 400px;
   }
 
-  #Projects figure > img.large {
+  #Projects figure > div.large {
     width: 600px;
   }
 
-  #Projects .height_based figure > img {
+  #Projects .height_based figure > div {
     width: auto;
     height: 350px;
   }
 
-  #Projects .icon {
-    position: relative;
+  #Projects .height_based figure > div > div {
+    height: 100%;
   }
-  
-  #Projects .icon_txt {
-    /* from w3schools.com */
-    background: rgb(40,40,40);
-    border-radius: 2px;
-    bottom: 90%;
-    color: white;
-    display: inherit;
-    font-size: 12px;
-    left: 0%;
-    opacity: 0;
-    padding: 3px 5px;
-    position: absolute;
-    transition: 0.2s;
-    visibility: hidden;
-    white-space: nowrap;
-  }
-  
-  #Projects .icon .icon_txt::after {
-    /* from w3schools.com */
-    border-color: rgb(40,40,40) transparent transparent transparent;
-    border-style: solid;
-    border-width: 5px;
-    content: "";
-    left: 15%;
-    margin-left: -8px;
-    position: absolute;
-    top: 100%;
-  }
-
-  #Projects .icon:hover .icon_txt {
-    /* from w3schools.com */
-    bottom: 120%;
-    opacity: 1;
-    visibility: visible;
-  }
-}
+} */
