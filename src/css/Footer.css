@@ -25,11 +25,11 @@ footer .social_media svg {
   width: 30px;
 }
 
-.icon {
+footer .icon {
   margin: 0 10px;
 }
 
-.icon_txt {
+footer .icon_txt {
   display: none;
 }
 
@@ -42,11 +42,11 @@ footer .social_media svg {
     fill: rgb(85,26,139);
   }
 
-  .icon {
+  footer .icon {
     position: relative;
   }
   
-  .icon_txt {
+  footer .icon_txt {
     /* from w3schools.com */
     background: rgb(40,40,40);
     border-radius: 2px;
@@ -63,7 +63,7 @@ footer .social_media svg {
     white-space: nowrap;
   }
   
-  .icon .icon_txt::after {
+  footer .icon .icon_txt::after {
     /* from w3schools.com */
     border-color: rgb(40,40,40) transparent transparent transparent;
     border-style: solid;
@@ -74,16 +74,16 @@ footer .social_media svg {
     position: absolute;
     top: 100%;
   }
-
-  .icon .icon_txt.linkedin::after {
-    margin-left: -17px;
-  }
   
-  .icon:hover .icon_txt {
+  footer .icon:hover .icon_txt {
     /* from w3schools.com */
     bottom: 120%;
     opacity: 1;
     visibility: visible;
+  }
+
+  footer .icon .icon_txt.linkedin::after {
+    margin-left: -17px;
   }
 }
 

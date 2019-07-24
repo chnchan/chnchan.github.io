@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Resume from '../pdf/ResumeWEB.pdf';
 
 import logo from '../img/logo.png';
+import logoHD from '../img/logoHD.png';
 import '../css/Home.css';
 import '../css/Animations.css';
 
@@ -15,6 +16,7 @@ function Home(props) {
       <div className='whitespace'></div>
       <header>
         <img id='logo' src={logo} alt='logo' onLoad={props.onloadFunc} draggable='false'></img>
+        <img id='logoHD' src={logoHD} alt='logo' onLoad={props.onloadFunc2} draggable='false'></img>
         <h2>Undergrad Student | Computer Science</h2>
         <nav>
           <Link to='/about'>About</Link>

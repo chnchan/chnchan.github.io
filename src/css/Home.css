@@ -20,6 +20,10 @@
   animation: slideOutLeft 0.5s forwards;
 }
 
+#logoHD {
+  display: none;
+}
+
 #logo {
   height: auto;
   width: 95vw;
@@ -31,4 +35,24 @@
 
 #logo.show {
   visibility: visible;
+}
+
+@media screen and (min-width: 1080px) {
+  #logo {
+    display: none;
+  }
+
+  #logoHD {
+    height: auto;
+    width: 95vw;
+    max-height: 400px;
+    max-width: 706px;
+    margin-bottom: 13px;
+    visibility: hidden;
+    display: inherit;
+  }
+
+  #logoHD.show {
+    visibility: visible;
+  }
 }

@@ -52,10 +52,16 @@ header nav p.active, header nav a.active {
   color: rgb(85,26,139);
 }
 
+#profile_container {
+  width: calc(100vw * 2 / 3);
+  max-width: 200px;
+}
+
 header #profile {
   border-radius: 50%;
-  height: 200px;
+  width: 100%;
   visibility: hidden;
+  transition: width 0.2s;
 }
 
 header #profile.show {
@@ -64,17 +70,15 @@ header #profile.show {
 
 header #back_button {
   margin-top: 40px;
-  padding-left: 24vw;
-  width: 100vw;
-  text-align: left;
+  padding-left: 3vw;
+  align-self: flex-start;
+  transition: padding 0.2s;
 }
 
 header #back_button svg {
-  padding: 15px;
   width: 20px;
   height: auto;
 }
-
 
 .underline {
   position: relative;
@@ -112,6 +116,10 @@ header #back_button svg {
     transition: text-shadow 0.3s;
   }
   
+  header #back_button {
+    padding-left: 12vw;
+  }
+
   header #back_button svg:hover {
     fill: rgb(85,26,139);
   }
@@ -119,6 +127,6 @@ header #back_button svg {
 
 @media screen and (min-width: 1300px) {
   header #back_button {
-    padding-left: 50%;
+    padding-left: 25%;
   }
 }

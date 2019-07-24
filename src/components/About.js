@@ -25,7 +25,10 @@ function About(props) {
           </Link>
         </div>
 
-        <img id='profile' src={profile} alt='profile' onLoad={props.onloadFunc} draggable='false'></img>
+        <div id='profile_container'>
+          <img id='profile' src={profile} alt='profile' onLoad={props.onloadFunc} draggable='false'></img>
+        </div>
+
         <h1>Chun Hin Chan</h1>
         <h2>Undergrad Student | Computer Science</h2>
         <nav>

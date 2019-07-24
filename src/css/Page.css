@@ -1,9 +1,9 @@
 #Page {
-  padding: 0 12vw;
+  padding: 0 3vw;
   text-align: left;
   font-family: 'Raleway';
   font-size: 17px;
-  transition: padding 0.5s;
+  transition: padding 0.2s;
 }
 
 #Page p {
@@ -24,6 +24,12 @@
 
 #Page h2 {
   font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  #Page {
+    padding: 0 12vw;
+  }
 }
 
 @media screen and (min-width: 1300px) {

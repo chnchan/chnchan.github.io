@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Collapse, { Panel } from 'rc-collapse';
 import { ReactComponent as BackButton } from '../img/back.svg';
 
-
 import Footer from './Footer';
 import Tags from './Tags';
 import profile from '../img/chun-hin-chan2.jpg';
@@ -19,7 +18,10 @@ import lango_add_demo from '../projects/web/lango_add_demo.gif';
 import lango_review_demo from '../projects/web/lango_review_demo.gif';
 import lango_user_db from '../projects/web/lango_database1.png';
 import lango_flashcard_db from '../projects/web/lango_database2.png';
-
+import my_web_v1_home from '../projects/web/v1_home.png';
+import my_web_v1_projects from '../projects/web/v1_projects.png';
+import my_web_v1_1_home from '../projects/web/v1.1_home.png';
+import my_web_v2_demo from '../projects/web/v2_demo.gif';
 
 import com_vis_ps1 from '../projects/com_vis/ps1.pdf';
 import com_vis_ps2 from '../projects/com_vis/ps2.pdf';
@@ -41,7 +43,10 @@ function Projects(props) {
           </Link>
         </div>
 
-        <img id='profile' src={profile} alt='profile' onLoad={props.onloadFunc} draggable='false'></img>
+        <div id='profile_container'>
+          <img id='profile' src={profile} alt='profile' onLoad={props.onloadFunc} draggable='false'></img>
+        </div>
+
         <h1>Chun Hin Chan</h1>
         <h2>Undergrad Student | Computer Science</h2>
         <nav>
@@ -60,7 +65,7 @@ function Projects(props) {
             <Collapse accordion={true}>
               <Panel header='Hassle-Free - the Bill Splitter v1 & v2' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
                 <p className='pad_bottom'>My interest in web programming all started because my housemates and I are lazy when it comes to splitting the bills. So, I thought to myself that why don't I make something that can make this more convenient. And, the first thing that came to mind is a website.</p>
-                <p className='pad_bottom'>I never had any experience in making a website, but it didn't take long for me to learn the basic fundamentals (HTML/CSS/JS) thanks to Youtube and W3Schools. My very first website (besides Hello World of course!) is called Hassle-Free: <a href='https://chnchan.github.io/Hassle-Free/'>https://chnchan.github.io/Hassle-Free/</a></p>
+                <p className='pad_bottom'>I never had any experience in making a website, but it didn't take long for me to learn the basic fundamentals (HTML/CSS/JS) thanks to Youtube and W3Schools. My very first website (besides Hello World of course!) is called Hassle-Free: <a className='underline' href='https://chnchan.github.io/Hassle-Free/'>https://chnchan.github.io/Hassle-Free/</a></p>
 
                 <div className='img_container'>
                   <figure>
@@ -73,7 +78,7 @@ function Projects(props) {
                   </figure>
                 </div>
 
-                <p className='pad_top pad_bottom'>I didn't know there are libraries like React.js that can swap componenets in and out at the time, so I did a bare bone version of it when implementating this website. The website does what I originally wanted and I was very happy, but I eventually got tired of this childish look and wanted something that looks more professional, which is why I made Hassle-free v2: <a href='https://chnchan.github.io/Virtual-Receipt/'>https://chnchan.github.io/Virtual-Receipt/</a>. I am really happy how the reciept-looking theme turned out so this would most likely be the last version unless I came up with a better design.</p>
+                <p className='pad_top pad_bottom'>I didn't know there are libraries like React.js that can swap componenets in and out at the time, so I did a bare bone version of it when implementating this website. The website does what I originally wanted and I was very happy, but I eventually got tired of this childish look and wanted something that looks more professional, which is why I made Hassle-free v2: <a className='underline' href='https://chnchan.github.io/Virtual-Receipt/'>https://chnchan.github.io/Virtual-Receipt/</a>. I am really happy how the reciept-looking theme turned out so this would most likely be the last version unless I came up with a better design.</p>
 
                 <div className='img_container'>
                   <figure>
@@ -82,13 +87,16 @@ function Projects(props) {
                   </figure>
                 </div>
               </Panel>
-              <Panel header='6 Hour Weather Forcast Website w/ OpenWeatherMap API' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
+              <Panel header='6 Hour Weather Forcast Web App' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
                 {/* <p className='pad_bottom'>
                   &#9888; The API has expired. I decided to take the website down from GitHub Pages as it is no longer functional.
                 </p> */}
-
-                <p className='pad_top pad_bottom'>
-                  <span role='img' aria-label="college">&#127979;</span> This is a course project at UC Davis designed by course TA, Jamie Oka.
+                <p>
+                  <span role='img' aria-label="books">&#128218;</span> This is a course project at UC Davis designed by course TA, Jamie Oka.
+                </p>
+                <p className='pad_bottom'>
+                  <span role='img' aria-label="package">&#128230;</span> This project uses:{" "}
+                  <a target='_blank' className='underline' href='https://openweathermap.org/api' rel="noopener noreferrer">OpenWeatherMap API</a>.
                 </p>
 
                 <p className='pad_top pad_bottom'>
@@ -119,15 +127,24 @@ function Projects(props) {
                 </div>
               </Panel>
               <Panel header='Lango! - the Flashcard Web App w/ Node.js, React.js, Google Translate API' extra={<Tags t1='HTML' t2='CSS' t3='JS' t4='SQLite3'/>}>
-                <p className='pad_top pad_bottom'>
-                  <span role='img' aria-label="college">&#127979;</span> This is a course project at UC Davis designed by course TA, Jamie Oka.
+                <p>
+                  <span role='img' aria-label="books">&#128218;</span> This is a course project at UC Davis designed by course TA, Jamie Oka.
+                </p>
+                <p className='pad_bottom'>
+                  <span role='img' aria-label="package">&#128230;</span> This project uses:{" "}
+                  <a target='_blank' className='underline' href='https://github.com/facebook/create-react-app' rel="noopener noreferrer">React</a>,{" "}
+                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/express' rel="noopener noreferrer">Express</a>,{" "}
+                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/passport' rel="noopener noreferrer">Passport</a>,{" "}
+                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/cookie-session' rel="noopener noreferrer">cookie-session</a>,{" "}
+                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/sqlite3' rel="noopener noreferrer">SQLite3</a>,{" "}
+                  <a target='_blank' className='underline' href='https://developers.google.com/apis-explorer/#p/' rel="noopener noreferrer">Google API</a> (Cloud Translation API & OAuth2 API 2.0).
                 </p>
 
                 <p className='pad_top pad_bottom'>
                   As our final assigment for the web programming course at UC Davis, we were each assigned with a port on the server along with the design of the project in Adobe XD. Our task was to implement Lango such that it follows as closely to the design as possible and that all the functionalities specificied works as intended. Some of the specifications are the following:
                 </p>
                 <ol className='pad_bottom'>
-                  <li>The website should be accessed through <strong>http://server162.site:[port]/user/lango.html#</strong> and redirected to <strong>http://server162.site:[port]/login.html</strong> if the user is not logged in. The URL should be the only thing the user need to access the web app.</li>
+                  <li>The website should be accessed through <strong className='grey'>http://server162.site:[port]/user/lango.html#</strong> and redirected to <strong className='grey'>http://server162.site:[port]/login.html</strong> if the user is not logged in. The URL should be the only thing the user need to access the web app.</li>
                   <li className='pad_bottom'>User will login via Google.</li>
 
                   <div className='img_container'>
@@ -160,7 +177,7 @@ function Projects(props) {
                 </ol>
                 
                 <p className='pad_bottom'>
-                  Majority of the client/server communication is done via AJAX queries. For example, if the user wants to translate "hello", <strong>http://server162.site:[port]/user/translate?english=hello</strong> will be sent to the server. The server will then send the translation request to the Google Translate API and when it comes back, it will return a json consisting the input and the translated text back to the client. The client javascript will take the translated text and update the React state (which React will then update the actual HTML).
+                  Majority of the client/server communication is done via AJAX queries. For example, if the user wants to translate "hello", <strong className='grey'>http://server162.site:[port]/user/translate?english=hello</strong> will be sent to the server. The server will then send the translation request to the Google Translate API and when it comes back, it will return a json consisting the input and the translated text back to the client. The client javascript will take the translated text and update the React state (which React will then update the actual HTML).
                 </p>
 
                 <p className='pad_bottom'>
@@ -168,19 +185,56 @@ function Projects(props) {
                 </p>
 
                 <div className='img_container'>
-                    <figure>
-                      <img className='small' src={lango_user_db} alt='lango_user_db'></img>
-                      <figcaption>&#x25B2; Users.db stores mapping of Google ID to User ID</figcaption>
-                    </figure>
+                  <figure>
+                    <img className='small' src={lango_user_db} alt='lango_user_db'></img>
+                    <figcaption>&#x25B2; Users.db stores mapping of Google ID to User ID</figcaption>
+                  </figure>
 
-                    <figure>
-                      <img className='small' src={lango_flashcard_db} alt='lango_flashcard_db'></img>
-                      <figcaption>&#x25B2; Flashcards.db stores Input Text, Translated Text, User ID, Times Seen, <br/>Times Correct</figcaption>
-                    </figure>
-                  </div>
+                  <figure>
+                    <img className='small' src={lango_flashcard_db} alt='lango_flashcard_db'></img>
+                    <figcaption>&#x25B2; Flashcards.db stores Input Text, Translated Text, User ID, Times Seen, <br/>Times Correct</figcaption>
+                  </figure>
+                </div>
               </Panel>
-              <Panel disabled='true' header='My Personal Website w/ React.js' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
-                this is panel content2 or other
+              <Panel header='My Personal Website w/ React.js' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
+                <p className='pad_bottom'>
+                  <span role='img' aria-label="package">&#128230;</span> The current version, <strong>V3</strong>, of the project uses:{" "}
+                  <a target='_blank' className='underline' href='https://github.com/facebook/create-react-app' rel="noopener noreferrer">React</a>,{" "}
+                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/react-router-dom' rel="noopener noreferrer">react-router-dom</a>,{" "}
+                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/react-transition-group' rel="noopener noreferrer">react-transition-group</a>,{" "}
+                  <a target='_blank' className='underline' href='https://www.npmjs.com/package/react-router-dom' rel="noopener noreferrer">rc-collapse</a>,{" "} 
+                </p>
+
+                <p className='pad_top pad_bottom'>
+                  This section is used for logging the past versions of my personal website.
+                </p>
+
+                <p><strong>V1:</strong> HTML, CSS</p>
+                <div className='img_container'>
+                  <figure>
+                    <img src={my_web_v1_home} alt='my_web_v1_home'></img>
+                    <figcaption>&#x25B2; homepage v1</figcaption>
+                  </figure>
+
+                  <figure>
+                    <img src={my_web_v1_projects} alt='my_web_v1_projects'></img>
+                    <figcaption>&#x25B2; projects page v1</figcaption>
+                  </figure>
+                </div>
+                <div className='img_container left'>
+                  <figure>
+                    <img src={my_web_v1_1_home} alt='my_web_v1_1_home'></img>
+                    <figcaption>&#x25B2; homepage v1_1</figcaption>
+                  </figure>
+                </div>
+
+                <p className='pad_top'><strong>V2:</strong> HTML, CSS</p>
+                <div className='img_container'>
+                  <figure>
+                    <img className='large' src={my_web_v2_demo} alt='my_web_v2_demo'></img>
+                    <figcaption>&#x25B2; v2 demo</figcaption>
+                  </figure>
+                </div>
               </Panel>            
             </Collapse>
           </div>

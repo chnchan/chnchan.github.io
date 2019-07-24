@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Home from './Home.js';
 import About from './About.js';
@@ -18,7 +18,7 @@ function App() {
                 <Switch location={location}>
                   {/* <Route exact path='/' component={Home}/> */}
                   <Route exact path={process.env.PUBLIC_URL + '/'} render={() => (
-                    <Home onloadFunc={show_logo}/>
+                    <Home onloadFunc={show_logo} onloadFunc2={show_logoHD}/>
                   )}/>
                   {/* <Route exact path='/about' component={About}/> */}
                   <Route exact path={process.env.PUBLIC_URL + '/about'} render={() => (
@@ -41,6 +41,11 @@ function App() {
 function show_logo() {
   let logo = document.getElementById('logo');
   logo.classList.add('show');
+}
+
+function show_logoHD() {
+  let logoHD = document.getElementById('logoHD');
+  logoHD.classList.add('show');
 }
 
 function show_profile() {
