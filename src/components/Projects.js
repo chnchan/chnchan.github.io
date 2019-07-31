@@ -23,8 +23,13 @@ import my_web_v1_home from '../projects/web/v1_home.png';
 import my_web_v1_projects from '../projects/web/v1_projects.png';
 import my_web_v1_1_home from '../projects/web/v1.1_home.png';
 import my_web_v2_demo from '../projects/web/v2_demo.gif';
+import seam_carving_i3 from '../projects/com_vis/seam_carving_i3.jpg';
+import seam_carving_i3_w300 from '../projects/com_vis/seam_carving_i3_w300.png';
+import seam_carving_i3_t300 from '../projects/com_vis/seam_carving_i3_t300.png';
+import seam_carving_i3_e100 from '../projects/com_vis/seam_carving_i3_e100.png';
+import seam_carving_failed1 from '../projects/com_vis/seam_carving_failed1.png';
+import seam_carving_failed2 from '../projects/com_vis/seam_carving_failed2.png';
 // Pdf
-import com_vis_ps1 from '../projects/com_vis/ps1.pdf';
 import com_vis_ps2 from '../projects/com_vis/ps2.pdf';
 import Resume from '../pdf/ResumeWEB.pdf';
 // CSS
@@ -59,10 +64,10 @@ function Projects(props) {
         </nav>
       </header>
 
-      <section>
+      <div>
         <hr className='section-break-5 top'/>
         <div id='Page'>
-          <div className='web_programming'>
+          <section className='web_programming'>
             <h2>Web Programming:</h2>
             <Collapse accordion={true}>
               <Panel header='Hassle-Free - the Bill Splitter v1 & v2' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
@@ -94,10 +99,10 @@ function Projects(props) {
                   &#9888; The API has expired. I decided to take the website down from GitHub Pages as it is no longer functional.
                 </p> */}
                 <p>
-                  <span role='img' aria-label="books">&#128218;</span> This is a course project at UC Davis designed by course TA, Jamie Oka.
+                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='https://www.linkedin.com/in/jamie-oka-781a83172/' rel='noopener noreferrer'>Prof. Amenta</a> at UC Davis. The project is designed by course TA, <a target='_blank' className='underline' href='https://www.linkedin.com/in/jamie-oka-781a83172/' rel='noopener noreferrer'>Jamie Oka</a>.
                 </p>
                 <p className='pad_bottom'>
-                  <span role='img' aria-label="package">&#128230;</span> This project uses:{" "}
+                  <span role='img' aria-label='package'>&#128230;</span> This project uses:{" "}
                   <a target='_blank' className='underline' href='https://openweathermap.org/api' rel="noopener noreferrer">OpenWeatherMap API</a>.
                 </p>
 
@@ -119,21 +124,21 @@ function Projects(props) {
                 
                 <div className='img_container height_based'>
                   <figure>
-                    <ModalImage small={weather_app_mobile} large={weather_app_mobile} alt='weather_app_mobile.gif' hideZoom={true}/>
-                    <figcaption>&#x25B2; Mobile View</figcaption>
-                  </figure>
-                  <figure>
                     <ModalImage small={weather_app_tablet} large={weather_app_tablet} alt='weather_app_tablet.png' hideZoom={true}/>
                     <figcaption>&#x25B2; Tablet View</figcaption>
+                  </figure>
+                  <figure>
+                    <ModalImage small={weather_app_mobile} large={weather_app_mobile} alt='weather_app_mobile.gif' hideZoom={true}/>
+                    <figcaption>&#x25B2; Mobile View</figcaption>
                   </figure>
                 </div>
               </Panel>
               <Panel header='Lango! - the Flashcard Web App' extra={<Tags t1='HTML' t2='CSS' t3='JS' t4='SQLite3'/>}>
                 <p>
-                  <span role='img' aria-label="books">&#128218;</span> This is a course project at UC Davis designed by course TA, Jamie Oka.
+                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='https://www.linkedin.com/in/jamie-oka-781a83172/' rel='noopener noreferrer'>Prof. Amenta</a> at UC Davis. The project is designed by course TA, <a target='_blank' className='underline' href='https://www.linkedin.com/in/jamie-oka-781a83172/' rel='noopener noreferrer'>Jamie Oka</a>.
                 </p>
                 <p className='pad_bottom'>
-                  <span role='img' aria-label="package">&#128230;</span> This project uses:{" "}
+                  <span role='img' aria-label='package'>&#128230;</span> This project uses:{" "}
                   <a target='_blank' className='underline' href='https://github.com/facebook/create-react-app' rel="noopener noreferrer">React</a>,{" "}
                   <a target='_blank' className='underline' href='https://www.npmjs.com/package/express' rel="noopener noreferrer">Express</a>,{" "}
                   <a target='_blank' className='underline' href='https://www.npmjs.com/package/passport' rel="noopener noreferrer">Passport</a>,{" "}
@@ -198,7 +203,7 @@ function Projects(props) {
                   </figure>
                 </div>
               </Panel>
-              <Panel header='My Personal Website' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
+              <Panel header='Personal Website' extra={<Tags t1='HTML' t2='CSS' t3='JS'/>}>
                 <p className='pad_bottom'>
                   <span role='img' aria-label="package">&#128230;</span> The current version, <strong>V3</strong>, of the project uses:{" "}
                   <a target='_blank' className='underline' href='https://github.com/facebook/create-react-app' rel="noopener noreferrer">React</a>,{" "}
@@ -209,10 +214,10 @@ function Projects(props) {
                 </p>
 
                 <p className='pad_top pad_bottom'>
-                  This section is used for logging the past versions of my personal website.
+                  I started working on my personal website ever since I started learning how to make a website. It grew from a bunch of plain and basic "Hello World" like static pages to a single well-crafted page thanks to react. While I tried to make it look as good as I could possible make it, I couldn't help to think of better design to build upon the smaller things that I made in each design. Being the person that I am, I am sure that there will be more version of this website to come. Instead letting them burried in a folder I would never open again, I thought why not show it to the world. Plus, it may even get my creative juice running when looking back at them!
                 </p>
 
-                <p><strong>V1:</strong> HTML, CSS</p>
+                <p className='pad_top'><strong>V1:</strong> HTML, CSS</p>
                 <div className='img_container'>
                   <figure>
                     <ModalImage small={my_web_v1_home} large={my_web_v1_home} alt='my_web_v1_home.png' hideZoom={true}/>
@@ -240,49 +245,111 @@ function Projects(props) {
                 </div>
               </Panel>            
             </Collapse>
-          </div>
+          </section>
 
-          <div className='comp_vision'>
+          <section className='comp_vision'>
             <h2>Computer Vision:</h2>
             <Collapse accordion={true}>
               <Panel header='Image Resizing with Seaming Carving' extra={<Tags t1='Matlab'/>}>
-                <iframe title='temp' src={com_vis_ps1} width='100%' height='600px'></iframe>
+                <p>
+                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='https://web.cs.ucdavis.edu/~yjlee/' rel='noopener noreferrer'>Prof. Yong Jae Lee</a> at UC Davis.
+                </p>
+
+                <p className='pad_top pad_bottom'>
+                  In this project, we were asked to implement the Seam Carving Algorithm, a content-aware image resizing algorithm, and apply the algorithm on different images. In short, the algorithm finds the path with the lowest "energy" value from top to bottom or left to right depending if it is a vertical or a horizontal resize. The path with the lowest "energy" value is be considered not important and will be discarded. This process will be repeated for X amount of times until it reaches the dimension specified. For more detail, click <a target='_blank' className='underline' href='https://web.cs.ucdavis.edu/~yjlee/teaching/ecs189g-spring2015/seamcarving.pdf' rel='noopener noreferrer'>here</a>.
+                </p>
+
+                <hr className='section-break-5 normal'/>
+
+                <p className='pad_top pad_bottom'>
+                  Here is an example of a traditional resize just so we can better compare the results of Seam Carving and traditional resize:
+                </p>
+
+                <div className='frame img_container height_based pad_bottom'>
+                  <figure className='small'>
+                    <p>Original:</p>
+                    <ModalImage small={seam_carving_i3} large={seam_carving_i3} alt='seam_carving_i3.jpg' hideZoom={true}/>
+                  </figure>
+                  <figure className='small'>
+                    <p>Shrink width by 300 pixels:</p>
+                    <ModalImage small={seam_carving_i3_t300} large={seam_carving_i3_t300} alt='seam_carving_i3_t300.png' hideZoom={true}/>
+                  </figure>
+                </div>                
+
+                <hr className='section-break-5 normal'/>
+
+                <p className='pad_bottom'>
+                  My results are as follows:
+                </p>
+                
+                <div className='img_container height_based'>
+                  <figure className='small'>
+                    <p>Original:</p>
+                    <ModalImage small={seam_carving_i3} large={seam_carving_i3} alt='seam_carving_i3.jpg' hideZoom={true}/>
+                  </figure>
+                </div>
+                <div className='img_container height_based pad_bottom'>
+                  <figure className='small'>
+                    <p>SC Shrink width by 300 pixels:</p>
+                    <ModalImage small={seam_carving_i3_w300} large={seam_carving_i3_w300} alt='seam_carving_i3_w300.png' hideZoom={true}/>
+                  </figure>
+                  <figure className='small'>
+                    <p>SC Expand width by 100 pixels:</p>
+                    <ModalImage small={seam_carving_i3_e100} large={seam_carving_i3_e100} alt='seam_carving_i3_e100.png' hideZoom={true}/>
+                  </figure>
+                </div>
+
+                <hr className='section-break-5 normal'/>
+                
+                <p className='pad_top pad_bottom'>
+                  I ran the algorithm on several different images. While some looks great (like the one above), some looks absolutely horrifying. Possible fix would be to allow users to increase the "energy" value on the image to prevent important feature of the image from getting resized.
+                </p>
+
+                <div className='img_container height_based'>
+                  <figure className='small'>
+                    <ModalImage small={seam_carving_failed1} large={seam_carving_failed1} alt='seam_carving_failed1.png' hideZoom={true}/>
+                  </figure>
+                  <figure className='small'>
+                    <ModalImage small={seam_carving_failed2} large={seam_carving_failed2} alt='seam_carving_failed2.png' hideZoom={true}/>
+                  </figure>
+                </div>
+
               </Panel>
               <Panel header='Image Stitcher w/ User Selected Correspondence' extra={<Tags t1='Matlab'/>}>
               <iframe title='temp2' src={com_vis_ps2} width='100%' height='600px'></iframe>
               </Panel>
             </Collapse>
-          </div>
+          </section>
 
-          <div className='comp_graphics'>
+          <section className='comp_graphics'>
             <h2>Computer Graphics:</h2>
             <Collapse accordion={true}>
-              <Panel disabled='true' header='Simple 2D Drawing System' extra={<Tags t1='C++' t3='OpenGL'/>}>
+              <Panel disabled={true} header='Simple 2D Drawing System' extra={<Tags t1='C++' t3='OpenGL'/>}>
                 this is panel content
               </Panel>
-              <Panel disabled='true' header='3D Transformation and Projection System' extra={<Tags t1='C++' t3='OpenGL'/>}>
+              <Panel disabled={true} header='3D Transformation and Projection System' extra={<Tags t1='C++' t3='OpenGL'/>}>
                 this is panel content2 or other
               </Panel>
-              <Panel disabled='true' header="3D System with Phong Lighting Model, Gourand Shading, and Painter's Algorithm" extra={<Tags t0='In Progress' t1='C++' t3='OpenGL'/>}>
+              <Panel disabled={true} header="3D System with Phong Lighting Model, Gourand Shading, and Painter's Algorithm" extra={<Tags t1='C++' t3='OpenGL'/>}>
                 this is panel content2 or other
               </Panel>
             </Collapse>
-          </div>
+          </section>
 
-          <div className='game_dev'>
+          <section className='game_dev'>
             <h2>Game Development:</h2>
             <Collapse accordion={true}>
-              <Panel disabled='true' header="Argh! It's Lava!" extra={<Tags t1='Unity' t2='3D'/>}>
+              <Panel disabled={true} header="Argh! It's Lava!" extra={<Tags t1='Unity' t2='3D'/>}>
                 this is panel content
               </Panel>
-              <Panel disabled='true' header='Basic RPG movement practice' extra={<Tags t1='Unity' t5='2D'/>}>
+              <Panel disabled={true} header='Basic RPG movement practice' extra={<Tags t1='Unity' t5='2D'/>}>
                 this is panel content2 or other
               </Panel>
             </Collapse>
-          </div>
+          </section>
         </div>
         <hr className='section-break-5 bottom'/>
-      </section>
+      </div>
 
       <Footer/>
     </div>
