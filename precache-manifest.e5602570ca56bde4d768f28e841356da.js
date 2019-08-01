@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32ac173f9d023442c45e238cd8cb9c29",
+    "revision": "38d9f3c1a7d0388dabfa00180fd1bbf5",
     "url": "/index.html"
   },
   {
-    "revision": "ef5c0edd0e49e6f427d4",
+    "revision": "bf50c4171fb1a593e149",
     "url": "/static/css/2.194e2ed7.chunk.css"
   },
   {
-    "revision": "91749be891a9a8fd9fbd",
-    "url": "/static/css/main.0f87b37b.chunk.css"
+    "revision": "f2850b0743961d01370f",
+    "url": "/static/css/main.dc52609c.chunk.css"
   },
   {
-    "revision": "ef5c0edd0e49e6f427d4",
-    "url": "/static/js/2.9307809d.chunk.js"
+    "revision": "bf50c4171fb1a593e149",
+    "url": "/static/js/2.3adcf350.chunk.js"
   },
   {
-    "revision": "91749be891a9a8fd9fbd",
-    "url": "/static/js/main.f1ef4b51.chunk.js"
+    "revision": "f2850b0743961d01370f",
+    "url": "/static/js/main.3b1f88b7.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -74,6 +74,42 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e76402490822eae9ec1eda1d294fa0f6",
     "url": "/static/media/hassle_free_v2.e7640249.png"
+  },
+  {
+    "revision": "e777fef4c0de51b2994e019d3092907c",
+    "url": "/static/media/img_stitcher_a1.e777fef4.jpg"
+  },
+  {
+    "revision": "0e60add3b7d7adcbbda91d093f46ec28",
+    "url": "/static/media/img_stitcher_a2.0e60add3.jpg"
+  },
+  {
+    "revision": "1117f4a5e753a13f96f7e7b602409c72",
+    "url": "/static/media/img_stitcher_a_out.1117f4a5.png"
+  },
+  {
+    "revision": "dfc3e3eb4dc1359093da499096583a2d",
+    "url": "/static/media/img_stitcher_b1.dfc3e3eb.jpg"
+  },
+  {
+    "revision": "7c43ec12a2b27ab1bd74f3fdbe035f95",
+    "url": "/static/media/img_stitcher_b2.7c43ec12.jpg"
+  },
+  {
+    "revision": "f68eac427491d3691a9ac362759be091",
+    "url": "/static/media/img_stitcher_b_out.f68eac42.png"
+  },
+  {
+    "revision": "e53b78b36f9d045d56fe01749fe38369",
+    "url": "/static/media/img_stitcher_c1.e53b78b3.jpg"
+  },
+  {
+    "revision": "381f2e16a2e697f4ccc3c2b2aef6f95f",
+    "url": "/static/media/img_stitcher_c2.381f2e16.jpg"
+  },
+  {
+    "revision": "04930328f40ccc369761ca87ae897c68",
+    "url": "/static/media/img_stitcher_c_out.04930328.png"
   },
   {
     "revision": "d7b2e1a55f953f1229f8c62187048c21",

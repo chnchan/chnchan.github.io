@@ -29,6 +29,15 @@ import seam_carving_i3_t300 from '../projects/com_vis/seam_carving_i3_t300.png';
 import seam_carving_i3_e100 from '../projects/com_vis/seam_carving_i3_e100.png';
 import seam_carving_failed1 from '../projects/com_vis/seam_carving_failed1.png';
 import seam_carving_failed2 from '../projects/com_vis/seam_carving_failed2.png';
+import img_stitcher_1_1 from '../projects/com_vis/img_stitcher_a1.jpg';
+import img_stitcher_1_2 from '../projects/com_vis/img_stitcher_a2.jpg';
+import img_stitcher_1 from '../projects/com_vis/img_stitcher_a_out.png';
+import img_stitcher_2_1 from '../projects/com_vis/img_stitcher_b1.jpg';
+import img_stitcher_2_2 from '../projects/com_vis/img_stitcher_b2.jpg';
+import img_stitcher_2 from '../projects/com_vis/img_stitcher_b_out.png';
+import img_stitcher_3_1 from '../projects/com_vis/img_stitcher_c1.jpg';
+import img_stitcher_3_2 from '../projects/com_vis/img_stitcher_c2.jpg';
+import img_stitcher_3 from '../projects/com_vis/img_stitcher_c_out.png';
 // Pdf
 import com_vis_ps2 from '../projects/com_vis/ps2.pdf';
 import Resume from '../pdf/ResumeWEB.pdf';
@@ -279,7 +288,7 @@ function Projects(props) {
                 <hr className='section-break-5 normal'/>
 
                 <p className='pad_bottom'>
-                  My results are as follows:
+                  My results for the same image are as follows:
                 </p>
                 
                 <div className='img_container height_based'>
@@ -302,7 +311,7 @@ function Projects(props) {
                 <hr className='section-break-5 normal'/>
                 
                 <p className='pad_top pad_bottom'>
-                  I ran the algorithm on several different images. While some looks great (like the one above), some looks absolutely horrifying. Possible fix would be to allow users to increase the "energy" value on the image to prevent important feature of the image from getting resized.
+                  I ran the algorithm on several different images. While some looks great (like the one above), some looks absolutely horrifying. Possible fix would be to allow users to increase the weight on certain parts of the image to prevent important features of an image from getting resized.
                 </p>
 
                 <div className='img_container height_based'>
@@ -315,8 +324,74 @@ function Projects(props) {
                 </div>
 
               </Panel>
-              <Panel header='Image Stitcher w/ User Selected Correspondence' extra={<Tags t1='Matlab'/>}>
-              <iframe title='temp2' src={com_vis_ps2} width='100%' height='600px'></iframe>
+              <Panel header='Image Stitcher with User Selected Correspondence' extra={<Tags t1='Matlab'/>}>
+                <p>
+                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='https://web.cs.ucdavis.edu/~yjlee/' rel='noopener noreferrer'>Prof. Yong Jae Lee</a> at UC Davis.
+                </p>
+
+                <p className='pad_top pad_bottom'>
+                  In this project, we were asked to implement an image stitcher. However, it would be beyond the scope of this course to auomate the correspondence selection process. Instead, we were told to implement a simple interface for user to manually select the correspondences (points on picture 1 that points to same feature as picture 2). There were a couple approaches to implement the stitcher. I decided to use the inverse-wraping approach as it would create a hole-less and preserving image. The outcome of my implementation are as follows:
+                </p>
+
+                <hr className='section-break-5 normal'/>
+
+                <div className='frame img_container height_based pad_bottom'>
+                  <figure className='small'>
+                    <p>Picture 1:</p>
+                    <ModalImage small={img_stitcher_1_1} large={img_stitcher_1_1} alt='img_stitcher_1_1.jpg' hideZoom={true}/>
+                  </figure>
+                  <figure className='small'>
+                    <p>Picture 2:</p>
+                    <ModalImage small={img_stitcher_1_2} large={img_stitcher_1_2} alt='img_stitcher_1_2.jpg' hideZoom={true}/>
+                  </figure>
+                </div>
+
+                <div className='frame img_container height_based pad_bottom'>
+                  <figure className='small'>
+                    <p>Result:</p>
+                    <ModalImage small={img_stitcher_1} large={img_stitcher_1} alt='img_stitcher_1.png' hideZoom={true}/>
+                  </figure>
+                </div>     
+
+                <hr className='section-break-5 normal'/>
+
+                <div className='frame img_container height_based pad_bottom'>
+                  <figure className='small'>
+                    <p>Picture 1:</p>
+                    <ModalImage small={img_stitcher_2_1} large={img_stitcher_2_1} alt='img_stitcher_2_1.jpg' hideZoom={true}/>
+                  </figure>
+                  <figure className='small'>
+                    <p>Picture 2:</p>
+                    <ModalImage small={img_stitcher_2_2} large={img_stitcher_2_2} alt='img_stitcher_2_2.jpg' hideZoom={true}/>
+                  </figure>
+                </div>
+
+                <div className='frame img_container height_based pad_bottom'>
+                  <figure className='small'>
+                    <p>Result:</p>
+                    <ModalImage small={img_stitcher_2} large={img_stitcher_2} alt='img_stitcher_2.png' hideZoom={true}/>
+                  </figure>
+                </div>
+
+                <hr className='section-break-5 normal'/>
+
+                <div className='frame img_container height_based pad_bottom'>
+                  <figure className='small'>
+                    <p>Picture 1:</p>
+                    <ModalImage small={img_stitcher_3_1} large={img_stitcher_3_1} alt='img_stitcher_3_1.jpg' hideZoom={true}/>
+                  </figure>
+                  <figure className='small'>
+                    <p>Picture 2:</p>
+                    <ModalImage small={img_stitcher_3_2} large={img_stitcher_3_2} alt='img_stitcher_3_2.jpg' hideZoom={true}/>
+                  </figure>
+                </div>
+
+                <div className='frame img_container height_based pad_bottom'>
+                  <figure className='small'>
+                    <p>Result:</p>
+                    <ModalImage small={img_stitcher_3} large={img_stitcher_3} alt='img_stitcher_3.png' hideZoom={true}/>
+                  </figure>
+                </div>   
               </Panel>
             </Collapse>
           </section>

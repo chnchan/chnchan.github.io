@@ -82,7 +82,7 @@
 
 #Projects .height_based figure img:not(.__react_modal_image__medium_img) {
   width: auto;
-  height: 450px;
+  height: 400px;
 }
 
 #Projects .height_based figure.small img:not(.__react_modal_image__medium_img) {
