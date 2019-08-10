@@ -7,7 +7,7 @@ footer {
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 11px;
   color: #aaa;
   margin: 0;
 }
@@ -22,7 +22,8 @@ footer .social_media {
 
 footer .social_media svg {
   height: auto;
-  width: 30px;
+  /* width: 30px; */
+  width: 27px;
 }
 
 footer .icon {

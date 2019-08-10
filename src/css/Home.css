@@ -27,10 +27,12 @@
 #logo {
   height: auto;
   width: 95vw;
-  max-height: 400px;
-  max-width: 706px;
+  /* max-height: 400px;
+  max-width: 706px; */
   margin-bottom: 13px;
   visibility: hidden;
+  max-height: 360px;
+  max-width: 635.4px;
 }
 
 #logo.show {
@@ -45,11 +47,13 @@
   #logoHD {
     height: auto;
     width: 95vw;
-    max-height: 400px;
-    max-width: 706px;
+    /* max-height: 400px;
+    max-width: 706px; */
     margin-bottom: 13px;
     visibility: hidden;
     display: inherit;
+    max-height: 360px;
+    max-width: 635.4px;
   }
 
   #logoHD.show {

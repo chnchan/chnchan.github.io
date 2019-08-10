@@ -13,13 +13,15 @@ header {
 
 header h1 {
   font-family: 'Raleway';
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 27px;
   font-weight: 800;
 }
 
 header h2 {
   color: #aaa;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 18px;
   font-weight: 400;
   margin: 0 12%;
 }
@@ -37,7 +39,8 @@ header nav p, header nav a {
   color: black;
   cursor: pointer;
   text-shadow: 0px 9px rgba(255,255,255,0);
-  font-size: 21px;
+  /* font-size: 21px; */
+  font-size: 18.9px;
   font-weight: 600;
   margin-left: 15px;
   margin-right: 15px;
@@ -59,7 +62,7 @@ header nav p.active, header nav a.active {
 
 header #profile {
   border-radius: 50%;
-  height: 100%;
+  height: 92%;
   visibility: hidden;
   transition: width 0.2s;
 }
@@ -76,7 +79,7 @@ header #back_button {
 }
 
 header #back_button svg {
-  width: 20px;
+  width: 18px;
   height: auto;
 }
 

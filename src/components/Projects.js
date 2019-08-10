@@ -38,8 +38,20 @@ import img_stitcher_2 from '../projects/com_vis/img_stitcher_b_out.png';
 import img_stitcher_3_1 from '../projects/com_vis/img_stitcher_c1.jpg';
 import img_stitcher_3_2 from '../projects/com_vis/img_stitcher_c2.jpg';
 import img_stitcher_3 from '../projects/com_vis/img_stitcher_c_out.png';
+import cg_p1 from '../projects/com_graphics/175p1.png';
+import cg_p1_rasterize from '../projects/com_graphics/175p1_rasterize.png';
+import cg_p1_rotate from '../projects/com_graphics/175p1_rotate.png';
+import cg_p1_scale from '../projects/com_graphics/175p1_scale.png';
+import cg_p1_menu from '../projects/com_graphics/175p1_menu.png';
+import cg_p2 from '../projects/com_graphics/175p2.png';
+import cg_p2_rotate from '../projects/com_graphics/175p2_rotate.png';
+import cg_p2_menu from '../projects/com_graphics/175p2_menu.png';
+import cg_p3 from '../projects/com_graphics/175p3.png';
+import cg_p3_menu from '../projects/com_graphics/175p3_menu.png';
+import cg_p3_light_shift from '../projects/com_graphics/175p3_light_shift.png';
+import cg_p3_halftone from '../projects/com_graphics/175p3_halftone.png';
+import cg_p3_halftone_color from '../projects/com_graphics/175p3_halftone_color.png';
 // Pdf
-import com_vis_ps2 from '../projects/com_vis/ps2.pdf';
 import Resume from '../pdf/ResumeWEB.pdf';
 // CSS
 import 'rc-collapse/assets/index.css';
@@ -261,7 +273,7 @@ function Projects(props) {
             <Collapse accordion={true}>
               <Panel header='Image Resizing with Seaming Carving' extra={<Tags t1='Matlab'/>}>
                 <p>
-                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='https://web.cs.ucdavis.edu/~yjlee/' rel='noopener noreferrer'>Prof. Yong Jae Lee</a> at UC Davis.
+                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='https://web.cs.ucdavis.edu/~yjlee/' rel='noopener noreferrer'>Prof. Lee</a> at UC Davis.
                 </p>
 
                 <p className='pad_top pad_bottom'>
@@ -274,7 +286,7 @@ function Projects(props) {
                   Here is an example of a traditional resize just so we can better compare the results of Seam Carving and traditional resize:
                 </p>
 
-                <div className='frame img_container height_based pad_bottom'>
+                <div className='img_container height_based pad_bottom'>
                   <figure className='small'>
                     <p>Original:</p>
                     <ModalImage small={seam_carving_i3} large={seam_carving_i3} alt='seam_carving_i3.jpg' hideZoom={true}/>
@@ -326,7 +338,7 @@ function Projects(props) {
               </Panel>
               <Panel header='Image Stitcher with User Selected Correspondence' extra={<Tags t1='Matlab'/>}>
                 <p>
-                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='https://web.cs.ucdavis.edu/~yjlee/' rel='noopener noreferrer'>Prof. Yong Jae Lee</a> at UC Davis.
+                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='https://web.cs.ucdavis.edu/~yjlee/' rel='noopener noreferrer'>Prof. Lee</a> at UC Davis.
                 </p>
 
                 <p className='pad_top pad_bottom'>
@@ -335,7 +347,7 @@ function Projects(props) {
 
                 <hr className='section-break-5 normal'/>
 
-                <div className='frame img_container height_based pad_bottom'>
+                <div className='img_container height_based pad_bottom'>
                   <figure className='small'>
                     <p>Picture 1:</p>
                     <ModalImage small={img_stitcher_1_1} large={img_stitcher_1_1} alt='img_stitcher_1_1.jpg' hideZoom={true}/>
@@ -346,7 +358,7 @@ function Projects(props) {
                   </figure>
                 </div>
 
-                <div className='frame img_container height_based pad_bottom'>
+                <div className='img_container height_based pad_bottom'>
                   <figure className='small'>
                     <p>Result:</p>
                     <ModalImage small={img_stitcher_1} large={img_stitcher_1} alt='img_stitcher_1.png' hideZoom={true}/>
@@ -355,7 +367,7 @@ function Projects(props) {
 
                 <hr className='section-break-5 normal'/>
 
-                <div className='frame img_container height_based pad_bottom'>
+                <div className='img_container height_based pad_bottom'>
                   <figure className='small'>
                     <p>Picture 1:</p>
                     <ModalImage small={img_stitcher_2_1} large={img_stitcher_2_1} alt='img_stitcher_2_1.jpg' hideZoom={true}/>
@@ -366,7 +378,7 @@ function Projects(props) {
                   </figure>
                 </div>
 
-                <div className='frame img_container height_based pad_bottom'>
+                <div className='img_container height_based pad_bottom'>
                   <figure className='small'>
                     <p>Result:</p>
                     <ModalImage small={img_stitcher_2} large={img_stitcher_2} alt='img_stitcher_2.png' hideZoom={true}/>
@@ -375,7 +387,7 @@ function Projects(props) {
 
                 <hr className='section-break-5 normal'/>
 
-                <div className='frame img_container height_based pad_bottom'>
+                <div className='img_container height_based pad_bottom'>
                   <figure className='small'>
                     <p>Picture 1:</p>
                     <ModalImage small={img_stitcher_3_1} large={img_stitcher_3_1} alt='img_stitcher_3_1.jpg' hideZoom={true}/>
@@ -386,7 +398,7 @@ function Projects(props) {
                   </figure>
                 </div>
 
-                <div className='frame img_container height_based pad_bottom'>
+                <div className='img_container height_based pad_bottom'>
                   <figure className='small'>
                     <p>Result:</p>
                     <ModalImage small={img_stitcher_3} large={img_stitcher_3} alt='img_stitcher_3.png' hideZoom={true}/>
@@ -399,14 +411,146 @@ function Projects(props) {
           <section className='comp_graphics'>
             <h2>Computer Graphics:</h2>
             <Collapse accordion={true}>
-              <Panel disabled={true} header='Simple 2D Drawing System' extra={<Tags t1='C++' t3='OpenGL'/>}>
-                this is panel content
+              <Panel header='Simple 2D Drawing System' extra={<Tags t1='C++' t3='OpenGL'/>}>
+                <p>
+                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='http://graphics.cs.ucdavis.edu/~hamann/' rel='noopener noreferrer'>Prof. Hamann</a> at UC Davis.
+                </p>
+
+                <p className='pad_top pad_bottom'>
+                  In this project, we were asked to create a simple two-dimensional drawing system. Prof. Hamann wants us to understand how OpenGL works under the hood so he had us draw the pixels pixel by pixel rather than functions like glVertex2f(). We did so by drawing the pixels on an array, called pixel buffer. Then, we use the function glDrawPixels() to flush the pixel buffer onto the drawing board. Anyhow, the main features of this drawing board are as follows:
+                </p>
+
+                <div className='img_container'>
+                  <figure>
+                    <ModalImage small={cg_p1_menu} large={cg_p1_menu} alt='cg_p1_menu.png' hideZoom={true}/>
+                  </figure>
+                </div>
+
+                <p className='pad_top pad_bottom'>
+                  Users can apply the operations to any object by specifying the object ID that appears on top of the function menu. Each object ID is followed by the object's coordinate so the user can identify which object the object ID is refering to.
+                </p>
+
+                <hr className='section-break-5 normal'/>                
+
+                <p className='pad_top pad_bottom'>
+                  <strong>Results:</strong>
+                </p>
+
+                <div className='img_container pad_bottom'>
+                  <figure>
+                    <ModalImage small={cg_p1} large={cg_p1} alt='cg_p1.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Loaded input and displayed on drawing board</figcaption>
+                  </figure>
+                </div>
+
+                <div className='img_container pad_bottom'>
+                  <figure className='small'>
+                    <ModalImage small={cg_p1_rasterize} large={cg_p1_rasterize} alt='cg_p1_rasterize.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Rasterized object 3</figcaption>
+                  </figure>
+                </div>
+            
+                <div className='img_container pad_bottom'>
+                  <figure className='small'>
+                    <ModalImage small={cg_p1_scale} large={cg_p1_scale} alt='cg_p1_scale.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Resized object 1 by scaling factor of (2, 1.2)</figcaption>
+                  </figure>
+                </div>
+
+                <div className='img_container'>
+                  <figure className='small'>
+                    <ModalImage small={cg_p1_rotate} large={cg_p1_rotate} alt='cg_p1_rotate.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Rotated object 2 by 30 degrees</figcaption>
+                  </figure>
+                </div>
               </Panel>
-              <Panel disabled={true} header='3D Transformation and Projection System' extra={<Tags t1='C++' t3='OpenGL'/>}>
-                this is panel content2 or other
+              <Panel header='3D Transformation and Projection System' extra={<Tags t1='C++' t3='OpenGL'/>}>
+                <p>
+                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='http://graphics.cs.ucdavis.edu/~hamann/' rel='noopener noreferrer'>Prof. Hamann</a> at UC Davis.
+                </p>
+
+                <p className='pad_top pad_bottom'>
+                  This project is very similar to the 2D Drawing System except that this is three dimensional objects projected to XY, XZ, YZ plane. The features are as follows:
+                </p>
+
+                <div className='img_container'>
+                  <figure>
+                    <ModalImage small={cg_p2_menu} large={cg_p2_menu} alt='cg_p2_menu.png' hideZoom={true}/>
+                  </figure>
+                </div>
+
+                <hr className='section-break-5 normal'/>                
+
+                <p className='pad_top pad_bottom'>
+                  <strong>Results:</strong>
+                </p>
+
+                <div className='img_container pad_bottom'>
+                  <figure className='large'>
+                    <ModalImage small={cg_p2} large={cg_p2} alt='cg_p2.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Loaded input and projected onto the corresponding plane</figcaption>
+                  </figure>
+                </div>
+
+                <div className='img_container'>
+                  <figure className='large'>
+                    <ModalImage small={cg_p2_rotate} large={cg_p2_rotate} alt='cg_p2_rotate.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Rotated the object by 65 degrees along the line (0,0,0), (1,1,1)</figcaption>
+                  </figure>
+                </div>
               </Panel>
-              <Panel disabled={true} header="3D System with Phong Lighting Model, Gourand Shading, and Painter's Algorithm" extra={<Tags t1='C++' t3='OpenGL'/>}>
-                this is panel content2 or other
+              <Panel header="3D System with Phong Lighting Model, Gourand Shading, and Painter's Algorithm" extra={<Tags t1='C++' t3='OpenGL'/>}>
+                <p>
+                  <span role='img' aria-label='books'>&#128218;</span> This is a course project from <a target='_blank' className='underline' href='http://graphics.cs.ucdavis.edu/~hamann/' rel='noopener noreferrer'>Prof. Hamann</a> at UC Davis.
+                </p>
+
+                <p className='pad_top pad_bottom'>
+                  In the last project, we implemented a simple 3D projection system. But, it was only displaying the frame of the object. In this project, we will also rasterize shaded triangles with Gourand shading and painter's algorithm (to solve the hidden surface problem). We will also be stimulating light using Phong lighting model. Additionally, we implemented half-toning to simulate different brightnesses on a binary display device. 
+                </p>
+
+                <p className='pad_top pad_bottom'>
+                  Since there are a lot more parameters for the Phong lighting modeal, the menu got much bigger comapred to previous projects:
+                </p>
+
+                <div className='img_container'>
+                  <figure>
+                    <ModalImage small={cg_p3_menu} large={cg_p3_menu} alt='cg_p3_menu.png' hideZoom={true}/>
+                  </figure>
+                </div>
+
+                <hr className='section-break-5 normal'/>                
+
+                <p className='pad_top pad_bottom'>
+                  <strong>Results:</strong>
+                </p>
+
+                <div className='img_container pad_bottom'>
+                  <figure className='large'>
+                    <ModalImage small={cg_p3} large={cg_p3} alt='cg_p2.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Loaded input and projected onto the corresponding plane</figcaption>
+                  </figure>
+                </div>
+
+                <div className='img_container pad_bottom'>
+                  <figure className='large'>
+                    <ModalImage small={cg_p3_light_shift} large={cg_p3_light_shift} alt='cg_p2_rotate.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Shifted light source from (50, 0, 0) to (-10, -10, 2)</figcaption>
+                  </figure>
+                </div>
+
+                <div className='img_container pad_bottom'>
+                  <figure className='large'>
+                    <ModalImage small={cg_p3_halftone} large={cg_p3_halftone} alt='cg_p2_rotate.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Half-tone mode (black and white)</figcaption>
+                  </figure>
+                </div>
+
+                <div className='img_container'>
+                  <figure className='large'>
+                    <ModalImage small={cg_p3_halftone_color} large={cg_p3_halftone_color} alt='cg_p2_rotate.png' hideZoom={true}/>
+                    <figcaption>&#x25B2; Half-tone mode (colored)</figcaption>
+                  </figure>
+                </div>
               </Panel>
             </Collapse>
           </section>
