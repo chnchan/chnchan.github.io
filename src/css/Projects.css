@@ -19,7 +19,7 @@
 }
 
 #Projects.page-exit {
-  animation: slideOutLeft 0.5s forwards;
+  animation: slideOutRight 0.5s forwards;
 }
 
 .rc-collapse {

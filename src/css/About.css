@@ -7,7 +7,7 @@
 }
 
 #About.page-enter {
-  animation: slideInRight 0.5s forwards;
+  animation: slideInLeft 0.5s forwards;
 }
 
 #About.page-exit {
