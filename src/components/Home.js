@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import Footer from './Footer';
-import Resume from '../pdf/ResumeWEB.pdf';
-
+import CV from '../pdf/CV.pdf';
 import logo from '../img/logo.png';
 import logoHD from '../img/logoHD.png';
 import '../css/Home.css';
@@ -22,7 +20,7 @@ function Home(props) {
           <Link to='/about'>About</Link>
           <Link to='/projects'>Projects</Link>
 
-          <a href={Resume} rel='noopener noreferrer'>Resume</a>
+          <a href={CV} rel='noopener noreferrer'>CV</a>
         </nav>
       </header>
       <div className='whitespace'></div>

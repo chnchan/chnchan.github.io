@@ -51,9 +51,7 @@ import cg_p3_menu from '../projects/com_graphics/175p3_menu.png';
 import cg_p3_light_shift from '../projects/com_graphics/175p3_light_shift.png';
 import cg_p3_halftone from '../projects/com_graphics/175p3_halftone.png';
 import cg_p3_halftone_color from '../projects/com_graphics/175p3_halftone_color.png';
-// Pdf
-import Resume from '../pdf/ResumeWEB.pdf';
-// CSS
+import CV from '../pdf/CV.pdf';
 import 'rc-collapse/assets/index.css';
 import '../css/Projects.css';
 import '../css/Modal.css';
@@ -81,7 +79,7 @@ function Projects(props) {
           <Link to='/about'>About</Link>
           <p className='active'>Projects</p>
 
-          <a href={Resume} rel='noopener noreferrer'>Resume</a>
+          <a href={CV} rel='noopener noreferrer'>CV</a>
         </nav>
       </header>
 

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ec7f97b924a9fc720861b7a7e248669",
+    "revision": "ada2f4641d006ebeb54ad16d63fcaa22",
     "url": "/index.html"
   },
   {
-    "revision": "2dcabaa726bfe419e323",
+    "revision": "93d07ce9d21db343f84f",
     "url": "/static/css/2.509817cb.chunk.css"
   },
   {
-    "revision": "f496ffe31bfef16e2061",
-    "url": "/static/css/main.6af8901f.chunk.css"
+    "revision": "4f3c7eea007ae2ed20b6",
+    "url": "/static/css/main.2f80c098.chunk.css"
   },
   {
-    "revision": "2dcabaa726bfe419e323",
-    "url": "/static/js/2.0068d6d9.chunk.js"
+    "revision": "93d07ce9d21db343f84f",
+    "url": "/static/js/2.38ee9d63.chunk.js"
   },
   {
-    "revision": "f496ffe31bfef16e2061",
-    "url": "/static/js/main.7b7c0cf2.chunk.js"
+    "revision": "4f3c7eea007ae2ed20b6",
+    "url": "/static/js/main.e8aecced.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/175p3_menu.05c990bb.png"
   },
   {
-    "revision": "df7c833a16359abef62c98a929959216",
-    "url": "/static/media/CoursesWEB.df7c833a.pdf"
+    "revision": "52536c2bebc163d6e604197b19cb3841",
+    "url": "/static/media/CV.52536c2b.pdf"
   },
   {
     "revision": "63d3ce119ade5708198e49d1be04b955",
@@ -70,10 +70,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ee41cee6d6baddf33c37b72a0e3e0945",
     "url": "/static/media/HK2_v2.ee41cee6.jpg"
-  },
-  {
-    "revision": "588c1bc237a42a4988b0077917efdb18",
-    "url": "/static/media/ResumeWEB.588c1bc2.pdf"
   },
   {
     "revision": "742335916bbaf97503669b7a5bc672a6",
