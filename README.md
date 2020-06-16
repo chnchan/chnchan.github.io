@@ -12,7 +12,7 @@ Installs prerequisites from `package.json`
 npm start
 ```
 
-Run the app in development mode on http://localhost:3000
+Runs the app in development mode on http://localhost:3000
 
 
 
@@ -22,5 +22,12 @@ npm run build
 
 Builds the app for production to the `build` folder.
 
+
+
+```bash
+npm run deploy
+```
+
+Builds the app for production and deploy to `master` branch.
 
 
