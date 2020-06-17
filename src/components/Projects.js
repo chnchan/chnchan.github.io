@@ -1,13 +1,11 @@
 // Component
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Collapse, { Panel } from 'rc-collapse';
 import ModalImage from "react-modal-image";
-import { ReactComponent as BackButton } from '../img/back.svg';
+import Navigation from './Nav';
 import Footer from './Footer';
 import Tags from './Tags';
 // Images
-import profile from '../img/chun-hin-chan2.jpg';
 import hassle_free_1_1 from '../projects/web/hassle_free_v1_1.png';
 import hassle_free_1_2 from '../projects/web/hassle_free_v1_2.png';
 import hassle_free_2 from '../projects/web/hassle_free_v2.png';
@@ -51,7 +49,6 @@ import cg_p3_menu from '../projects/com_graphics/175p3_menu.png';
 import cg_p3_light_shift from '../projects/com_graphics/175p3_light_shift.png';
 import cg_p3_halftone from '../projects/com_graphics/175p3_halftone.png';
 import cg_p3_halftone_color from '../projects/com_graphics/175p3_halftone_color.png';
-import CV from '../pdf/CV.pdf';
 import 'rc-collapse/assets/index.css';
 import '../css/Projects.css';
 import '../css/Modal.css';
@@ -62,26 +59,7 @@ import '../css/Animations.css';
 function Projects(props) {
   return (
     <div id='Projects'>
-      <header>
-        <div id='back_button'>
-          <Link to='/'>
-            <BackButton/>
-          </Link>
-        </div>
-
-        <div id='profile_container'>
-          <img id='profile' src={profile} alt='profile' onLoad={props.onloadFunc} draggable='false'></img>
-        </div>
-
-        <h1>Chun Hin Chan</h1>
-        <h2>Undergrad Student | Computer Science</h2>
-        <nav>
-          <Link to='/about'>About</Link>
-          <p className='active'>Projects</p>
-
-          <a href={CV} rel='noopener noreferrer'>CV</a>
-        </nav>
-      </header>
+      <Navigation onloadFunc={props.onloadFunc}/>
 
       <div>
         <hr className='section-break-5 top'/>

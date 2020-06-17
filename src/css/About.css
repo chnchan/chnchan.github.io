@@ -36,6 +36,18 @@
   margin: 0 15px 0px -25px;
 }
 
+#About .about {
+  cursor: default;
+  font-weight: 700;
+  color: rgb(85,26,139);
+}
+
+#About header nav a:not(.about):hover {
+  color: rgb(85,26,139);
+  text-shadow: 0px 0px rgba(85,26,139,1);
+  transition: text-shadow 0.3s;
+}
+
 .spacing {
   margin: 15px 0;
 }
