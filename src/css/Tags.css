@@ -1,70 +1,113 @@
 .Tags {
-  display: none;
-  user-select: none;
-  padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    user-select: none;
+    padding-left: 5px;
 }
 
-.tag {
-  border-radius: 5px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  /* font-size: 15px; */
-  font-size: 14px;
-  margin: 0;
-  margin-right: 4px;
-  padding: 2px 7px;
+.Tags .tag {
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    margin-right: 4px;
+    padding: 4px 7px;
 }
 
-.t0 {
-  background: rgba(255,255,255, 0);
-  color: black;
-  font-family: 'Raleway';
-  font-weight: 800;
-  margin-right: 15px;
+.Tags .spacer {
+    margin-left: auto;
 }
 
-.t1 {
-  background: #363636;
-  color: #fff;
+.Tags .Web {
+    background: #3D9970;
+    color: #fff;
 }
 
-.t1:hover {
-  background: #202020;
+.Tags .Web:hover {
+    background: #388060;
 }
 
-.t2 {
-  background:  #ff3860;
-  color: #fff;
+.Tags .Com_Vis {
+    background: #FF6347;
+    color: white;
 }
 
-.t2:hover {
-  background: #eb1e48;
+.Tags .Com_Vis:hover {
+    background: #d6533c;
 }
 
-.t3 {
-  background: #6B5B95;
-  color: #fff;
+.Tags .Com_Graph {
+    background: #6A5ACD;
+    color: white;
 }
 
-.t3:hover {
-  background: #524378;
+.Tags .Com_Graph:hover {
+    background: #5649a6;
 }
 
-.t4 {
-  background: #23d160;
-  color: #fff;
+.Tags .Coursework {
+    background: #00356b;
+    color: #fff;
 }
 
-.t4:hover {
-  background: #12b34a;
+.Tags .Coursework:hover {
+    background: #001f3f;
 }
 
-.t5 {
-  background: #00d1b2;
-  color: #fff;
+.Tags .HTML {
+    background: #363636;
+    color: #fff;
 }
 
-.t5:hover {
-  background: #00b398;
+.Tags .HTML:hover {
+    background: #202020;    
+}
+
+.Tags .CSS {
+    background:  #ff3860;
+    color: #fff;
+}
+
+.Tags .CSS:hover {
+    background: #eb1e48;
+}
+
+.Tags .JavaScript {
+    background: #6B5B95;
+    color: #fff;
+}
+
+.Tags .JavaScript:hover {
+    background: #524378;
+}
+
+.Tags .Matlab {
+    background: #b865b8;
+    color: #fff;
+}
+
+.Tags .Matlab:hover {
+    background: #9c529c;
+}
+
+.Tags .C__ {
+    background: #00d1b2;
+    color: #fff;
+}
+
+.Tags .C__:hover {
+    background: #00b398;
+    
+}
+
+.Tags .Github:hover {
+    fill: rgb(85,26,139);
+}
+
+.Tags .GoogleDrive:hover {
+    fill: rgb(85,26,139);
 }
 
 /* 
@@ -78,10 +121,3 @@ green: #23d160
 purple: #6B5B95
 red: #ff3860
 */
-
-@media screen and (min-width: 768px) {
-  .Tags {
-    display: flex;
-    flex-direction: row;
-  }
-}
