@@ -25,6 +25,7 @@ code {
 
 ::-webkit-scrollbar-thumb {
   background: #c1c1c1; 
+  border-radius: 10px;
   height: 50px;
 }
 

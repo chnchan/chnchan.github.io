@@ -1,11 +1,10 @@
 #Page {
+  padding: 0 3vw;
   text-align: left;
   font-family: 'Raleway';
   /* font-size: 17px; */
   font-size: 16px;
   transition: padding 0.2s;
-  margin-left: 6vw;
-  margin-right: 6vw;
 }
 
 #Page p {
@@ -31,16 +30,12 @@
 
 @media screen and (min-width: 768px) {
   #Page {
-    margin-left: 12vw;
-    margin-right: 12vw;
+    padding: 0 12vw;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   #Page {
-    /* padding: 0 25%; */
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 25%;
   }
 }
