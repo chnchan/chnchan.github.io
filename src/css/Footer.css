@@ -1,7 +1,7 @@
 footer {
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   margin-top: 20px;
   text-align: center;
 }
@@ -32,10 +32,6 @@ footer .icon {
 
 footer .icon_txt {
   display: none;
-}
-
-footer .top {
-  margin-top: 15px;
 }
 
 .hidden {

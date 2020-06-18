@@ -15,7 +15,7 @@ function Home(props) {
       <header>
         <img id='logo' src={logo} alt='logo' onLoad={props.onloadFunc} draggable='false'></img>
         <img id='logoHD' src={logoHD} alt='logo' onLoad={props.onloadFunc2} draggable='false'></img>
-        <h2>Computer Scientist</h2>
+        <h2>Undergrad Student | Computer Science</h2>
         <nav>
           <Link to='/about'>About</Link>
           <Link to='/projects'>Projects</Link>
