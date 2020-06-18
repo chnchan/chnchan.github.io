@@ -2,18 +2,17 @@ import React from 'react';
 
 import Navigation from './Nav';
 import Footer from './Footer';
-import UCD_logo from '../img/UCD.png';
-import HK from '../img/HK2.jpg';
-import HK_mobile from '../img/HK2_v2.jpg';
+import HK from '../img/HK.jpg';
+import HK_mobile from '../img/HK_mobile.jpg';
 import '../css/About.css';
 import '../css/Page.css';
 import '../css/Divider.css';
 import '../css/Animations.css';
 
 
-function ScrollBottom() {
-  window.scrollTo(0,document.body.scrollHeight);
-}
+// function ScrollBottom() {
+//   window.scrollTo(0,document.body.scrollHeight);
+// }
 
 function About(props) {
   return (
@@ -72,7 +71,7 @@ function About(props) {
             <li>ECS 175   -   Computer Graphics</li>
             <li>ECS 189E  -   Android and iOS fundamentals</li>
             <li>ECS 189H  -   Human Computer Interactions</li>
-            <li>ECS 193A/B  -   <a href='https://drive.google.com/drive/folders/1wj9ndik93FwypmXHKgx87hcymJ1BBaW-?usp=sharing'>Senior Design Project</a></li>
+            <li>ECS 193A/B  -   <a className='underline' href='https://drive.google.com/drive/folders/1wj9ndik93FwypmXHKgx87hcymJ1BBaW-?usp=sharing'>Senior Design Project</a></li>
           </ul>
         </div>
         <hr className='section-break-5 bottom'/>

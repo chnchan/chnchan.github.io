@@ -68,48 +68,13 @@
   padding-top: 10px;
 }
 
-#Projects .img_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+#Projects .project_container span {
+    margin-right: 12px;
 }
 
-#Projects .compare_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#Projects figure {
-  margin: 0;
-}
-
-#Projects figure img:not(.__react_modal_image__medium_img) {
-  width: 100%;
-  border: 1px solid #aaa;
-  padding: 2px;
-  cursor: zoom-in !important;
-}
-
-#Projects .height_based figure img:not(.__react_modal_image__medium_img) {
-  width: auto;
-  height: 400px;
-}
-
-#Projects .height_based figure.small img:not(.__react_modal_image__medium_img) {
-  width: auto;
-  height: 250px;
-}
-
-#Projects .compare_container img:not(.__react_modal_image__medium_img) {
-  width: auto;
-  height: 200px;
-}
-
-#Projects figure figcaption {
-  font-size: 12px;
-  margin-bottom: 10px;
+#Projects svg {
+    height: auto;
+    width: 27px;
 }
 
 @media screen and (min-width: 768px) {
