@@ -20,7 +20,8 @@
   display: block;
   height: 0;
   text-align: center;
-  width: 50%;
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
 
 .section-break-5::before {
@@ -36,4 +37,23 @@
     text-rendering: geometricPrecision;
     transform: translateY(-65%);
     width: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-break-5 {
+    margin-left: 12vw;
+    margin-right: 12vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-break-5 {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-break-5.short {
+    width: 600px;
+  }
 }
