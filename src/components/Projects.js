@@ -21,6 +21,7 @@ import ImageStitcher from './projects/Image_Stitcher';
 import DrawingSystem2D from './projects/Drawing_System_2D';
 import ProjectionSystem3Dt from './projects/Projection_System_3D_Transformation';
 import ProjectionSystem3DLighting from './projects/Projection_System_3D_lighting';
+import PixArt from './projects/PixArt';
 
 
 function Projects(props) {
@@ -32,6 +33,9 @@ function Projects(props) {
                 <hr className='section-break-5 top' />
                 <div id='Page'>
                     <Collapse accordion={true}>
+                        <Panel header='PixArt' extra={<Tags iOS />}><PixArt onError={error_img} /></Panel>
+
+
                         <Panel header='Personal Website' extra={<Tags Web />}><PersonalWebsite onError={error_img} /></Panel>
                         <Panel header='Lango! - the Flashcard Web App' extra={<Tags Web />}><Lango onError={error_img} /></Panel>
                         <Panel header='6 Hour Weather Forcast Web App' extra={<Tags Web />}><WeatherForcast onError={error_img} /></Panel>

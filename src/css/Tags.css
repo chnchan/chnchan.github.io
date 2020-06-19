@@ -14,6 +14,7 @@
     margin: 0;
     margin-right: 4px;
     padding: 4px 7px;
+    color: #fff;
 }
 
 .Tags .spacer {
@@ -22,7 +23,6 @@
 
 .Tags .Web {
     background: #3D9970;
-    color: #fff;
 }
 
 .Tags .Web:hover {
@@ -31,7 +31,6 @@
 
 .Tags .Com_Vis {
     background: #FF6347;
-    color: white;
 }
 
 .Tags .Com_Vis:hover {
@@ -40,16 +39,22 @@
 
 .Tags .Com_Graph {
     background: #6A5ACD;
-    color: white;
 }
 
 .Tags .Com_Graph:hover {
     background: #5649a6;
 }
 
+.Tags .iOS {
+    background: #147EFB;
+}
+
+.Tags .iOS:hover {
+    background: #126edb;
+}
+
 .Tags .Coursework {
     background: #00356b;
-    color: #fff;
 }
 
 .Tags .Coursework:hover {
@@ -58,7 +63,6 @@
 
 .Tags .HTML {
     background: #363636;
-    color: #fff;
 }
 
 .Tags .HTML:hover {
@@ -67,7 +71,6 @@
 
 .Tags .CSS {
     background:  #ff3860;
-    color: #fff;
 }
 
 .Tags .CSS:hover {
@@ -76,7 +79,6 @@
 
 .Tags .JavaScript {
     background: #6B5B95;
-    color: #fff;
 }
 
 .Tags .JavaScript:hover {
@@ -85,7 +87,6 @@
 
 .Tags .Matlab {
     background: #b865b8;
-    color: #fff;
 }
 
 .Tags .Matlab:hover {
@@ -94,12 +95,19 @@
 
 .Tags .C__ {
     background: #00d1b2;
-    color: #fff;
 }
 
 .Tags .C__:hover {
     background: #00b398;
     
+}
+
+.Tags .Swift {
+    background: #FF69B4;
+}
+
+.Tags .Swift:hover {
+    background: #e05c;
 }
 
 .Tags .Github:hover {
