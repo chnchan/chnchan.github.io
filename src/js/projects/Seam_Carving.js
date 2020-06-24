@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -46,7 +46,7 @@ const images = [
 ];
 
 
-function SeamCarvin(props) {
+function SeamCarving(props) {
     return (
         <div className='project_container'>
             <Tags Coursework spacer Matlab />
@@ -56,9 +56,9 @@ function SeamCarvin(props) {
                 This matlab script applies the principle of seam carving from <a target='_blank' className='underline' href='https://web.cs.ucdavis.edu/~yjlee/teaching/ecs189g-spring2015/seamcarving.pdf' rel='noopener noreferrer'>this paper</a> to achieve content-aware image resizing. It uses dynamic programming to determine the 'seam' with the least important and remove it (or duplicate it when extending). The process is repeated until the image reaches the desired width / height.
             </p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='April 2019' spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }
 
-export default SeamCarvin;
+export default SeamCarving;

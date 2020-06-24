@@ -1,7 +1,7 @@
 import React from 'react';
-import { ReactComponent as Photos } from '../img/photos.svg';
-import { ReactComponent as Github } from '../img/github.svg';
-import '../css/Tags.css';
+import { ReactComponent as Photos } from '../../img/photos.svg';
+import { ReactComponent as Github } from '../../img/github.svg';
+import '../../css/components/tags.css';
 
 
 // Usage: 

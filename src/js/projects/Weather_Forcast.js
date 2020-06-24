@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -38,7 +38,7 @@ function WeatherForcast(props) {
                 Unfortunately, the OpenWeatherMap API only offers one month of free access. Instead of hosting the website with limited capability, I decided to not host it at all. Therefore, there are no live version of this web app available.
             </p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='April 2019' spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -36,7 +36,7 @@ function ProjectionSystem3Dt(props) {
                 This program is a simple 3D drawing board with the ability to move, resize, and rotate objects. Objects loaded from a txt file containing coordinates of each mesh.
             </p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='Oct 2018' spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }
