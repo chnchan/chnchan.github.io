@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -46,7 +46,7 @@ function ProjectionSystem3DLighting(props) {
                 Unlike 3D Transformation and Projection System, this program focuses on rastering and illumination displayed in each plane. Meshes are rasterized using Gourand shading and painter's algorithm (to solve the hidden surface problem). Lights are simulated using the Phong lighting model. As a final touch, half-toning were implemented to simulate different brightnesses as if this was on a binary display device. 
             </p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='Nov 2018' spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }

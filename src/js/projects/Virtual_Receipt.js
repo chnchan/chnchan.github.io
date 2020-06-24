@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -24,7 +24,7 @@ function VirtualReceipt(props) {
 
             <p className='pad_bottom'>Splitting bill is a somewhat annoying process. This website aims to provide a solution to that. This is an improved version of the Hassle-Free - the Bill Splitter. This website is live on <a className='underline' href='https://chnchan.github.io/Virtual-Receipt/'>https://chnchan.github.io/Virtual-Receipt/</a>.</p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='Aug 2018' spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }

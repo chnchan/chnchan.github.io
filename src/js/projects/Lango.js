@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -48,7 +48,7 @@ function Lango(props) {
                 Unfortunately, the website was hosted on a school server that was only available for the duration of the course. Therefore, there are no live version of this web app available. Alternatively, <a href='https://drive.google.com/drive/folders/1Evj0D7l9jV--Omy3aPkP1GjocL4-dcBd?usp=sharing' className='underline'>here</a> is a link to a Google Drive containing more pictures of the web app.
             </p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='May 2019' spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }

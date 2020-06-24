@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -31,7 +31,7 @@ function ImageStitcher(props) {
                 This matlab script combines two images with overlapping fields of views into one. The script may work if the two images are taken at different angles, but it is not crafted for that. The script will prompt the users to mark items that exists on both images (correspondences). The result are heavily depended on the user marked correspondences.
             </p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='May 2019' spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }

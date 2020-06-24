@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -55,7 +55,7 @@ function PersonalWebsite(props) {
                 While this is something I started for fun, I have been maintaining and improving the website in ways that I see fitting. These are the major iterations of the website.
             </p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='On-going' spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }

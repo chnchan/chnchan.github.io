@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    user-select: none;
     padding-left: 5px;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
 }
 
 .Tags .tag {
@@ -12,9 +15,16 @@
     font-size: 14px;
     font-weight: 500;
     margin: 0;
-    margin-right: 4px;
+    margin-left: 4px;
     padding: 4px 7px;
     color: #fff;
+}
+
+.Tags .date {
+    margin: 0px;
+    padding: 4px 0px;
+    color: #aaa;
+    align-self: center
 }
 
 .Tags .spacer {
@@ -51,6 +61,14 @@
 
 .Tags .iOS:hover {
     background: #126edb;
+}
+
+.Tags .Security {
+    background: #808080;
+}
+
+.Tags .Security:hover {
+    background: #616060;
 }
 
 .Tags .Coursework {
@@ -108,6 +126,14 @@
 
 .Tags .Swift:hover {
     background: #e05c;
+}
+
+.Tags .Python {
+    background: #F4A460;
+}
+
+.Tags .Python:hover {
+    background: #d99257;
 }
 
 .Tags .Github:hover {

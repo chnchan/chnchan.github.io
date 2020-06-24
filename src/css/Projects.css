@@ -77,6 +77,27 @@
     width: 27px;
 }
 
+#Projects .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#Projects .container > h2 {
+  flex-grow: 1;
+}
+
+#Projects .sort_container {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+#Projects .small_text {
+  color: gray;
+  font-size: 14px;
+}
+
 @media screen and (min-width: 768px) {
   #Projects figure img:not(.__react_modal_image__medium_img) {
     width: 450px;

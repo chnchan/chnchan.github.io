@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -29,9 +29,9 @@ const images = [
         description: 'Navigation menu'
     },
     {
-        original: 'https://drive.google.com/uc?id=1Fx0wQ564fDhb0xtxI8MTy__kW22YsRkx',
-        thumbnail: 'https://drive.google.com/thumbnail?id=1Fx0wQ564fDhb0xtxI8MTy__kW22YsRkx',
-        description: 'Airdrop supported'
+        original: 'https://drive.google.com/uc?id=1kK5MRgL5_fpeq--syuLKSPx1yUojBfIt',
+        thumbnail: 'https://drive.google.com/thumbnail?id=1kK5MRgL5_fpeq--syuLKSPx1yUojBfIt',
+        description: 'AirDrop supported'
     }
 ];
 
@@ -54,7 +54,7 @@ function PixArt(props) {
                 Unfortunately, this app is not on App store as the annual fee is somewhat staggering for a typical student. However, we would hate to have this magical experience goes to waste. Therefore, we decided to set the repo to public so you can test it out! Click the little github icon on the bottom to access the repo.
             </p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='Dec 2019' spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }

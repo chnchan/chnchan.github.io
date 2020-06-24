@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Tags from '../Tags';
+import Tags from '../components/tags';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -41,7 +41,7 @@ function DrawingSystem2D(props) {
                 This program is a simple 2D drawing board with the ability to draw, rasterize, move, resize, and rotate objects. However, the rasterize feature only supports convex polygons. Note that the course professor prohibited student from using advanced function like glVertex2() for this project.
             </p>
 
-            <Tags spacer Github={repo_link} GoogleDrive={gd_link} />
+            <Tags date='Oct 2018'spacer Github={repo_link} GoogleDrive={gd_link} />
         </div>
     );
 }

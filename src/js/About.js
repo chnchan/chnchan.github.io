@@ -6,7 +6,7 @@ import HK from '../img/HK.jpg';
 import HK_mobile from '../img/HK_mobile.jpg';
 import '../css/About.css';
 import '../css/Page.css';
-import '../css/Divider.css';
+import '../css/components/divider.css';
 import '../css/Animations.css';
 
 
